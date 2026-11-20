@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+web/index.html
+web/email.html
+web/email.txt
+data/review_queue.json

@@ -121,7 +121,7 @@ def scan_venue(venue: dict, today: dt.date, force: bool) -> tuple[list[dict], di
             written = (f.get("dates_as_written") or "").strip()
             # Only trust date words that really appear on the page; the model can't invent them.
             verified = bool(written) and normalize(written) in page_norm
-            start, end = parse_range(written, today) if verified else (None, None)
+            start, end = parse_range(written, today)  # unverified dates are kept but flagged for the Sunday check
             title = (f.get("title") or "").strip()
             raw.append({**f, "source": "ai", "start_date": start, "end_date": end,
                         "title_on_page": bool(title) and normalize(title)[:40] in page_norm,
@@ -148,7 +148,7 @@ def scan_venue(venue: dict, today: dt.date, force: bool) -> tuple[list[dict], di
             "summary": (r.get("summary") or "").strip(),
             "url": r.get("url") or venue["urls"][0],
             "source": r.get("source"),
-            "needs_check": not (r.get("start_date") or r.get("end_date")),
+            "needs_check": not (r.get("start_date") or r.get("end_date")) or r.get("dates_verified") is False,
         })
 
     if not shows and health["status"] == "ok":
