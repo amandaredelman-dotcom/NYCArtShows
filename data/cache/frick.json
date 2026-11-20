@@ -1,0 +1,48 @@
+{
+ "fingerprint": "3387568daa7ce5b83bc0381462e3e609313cd869fa4076a0321c615914c4fbce",
+ "checked": "2026-11-20",
+ "shows": [
+  {
+   "key": "siena-the-art-of-bronze-1450-1500",
+   "title": "Siena: The Art of Bronze, 1450\u20131500",
+   "artists": [],
+   "start_date": "2026-10-15",
+   "end_date": "2027-01-18",
+   "dates_as_written": "October 15, 2026 to January 18, 2027",
+   "summary": "The Frick Collection presents an exhibition focusing on Siena as a center of artistic excellence and technical innovation in bronze sculpture during the Italian Renaissance.",
+   "url": "https://www.frick.org/exhibitions/siena",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Renaissance",
+    "Ancient"
+   ],
+   "media": [
+    "Decorative arts"
+   ],
+   "related": [],
+   "confident": true
+  },
+  {
+   "key": "kent-monkman-officer-and-laughing-girl",
+   "title": "Kent Monkman: Officer and Laughing Girl",
+   "artists": [],
+   "start_date": "2026-11-12",
+   "end_date": "2027-02-22",
+   "dates_as_written": "November 12, 2026 to February 22, 2027",
+   "summary": "The Frick Collection presents an installation of new paintings by Kent Monkman, exploring historic European art and narratives from an Indigenous perspective.",
+   "url": "https://www.frick.org/exhibitions/monkman",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Indigenous"
+   ],
+   "media": [
+    "Painting"
+   ],
+   "related": [],
+   "confident": true
+  }
+ ]
+}

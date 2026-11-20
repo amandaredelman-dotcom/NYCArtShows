@@ -1,0 +1,194 @@
+{
+ "generated_at": "2026-11-20T21:42:04+00:00",
+ "model": "qwen2.5:3b",
+ "venues_scanned": 20,
+ "show_count": 22,
+ "needs_review": 3,
+ "minutes": 25.9,
+ "venues": [
+  {
+   "venue": "The Met Fifth Avenue",
+   "id": "met",
+   "status": "unreachable",
+   "notes": [
+    "https://www.metmuseum.org/exhibitions: HTTP 429"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "The Frick Collection",
+   "id": "frick",
+   "status": "ok",
+   "notes": [],
+   "shows": 2,
+   "changed": true
+  },
+  {
+   "venue": "The Morgan Library & Museum",
+   "id": "morgan",
+   "status": "unreachable",
+   "notes": [
+    "https://www.themorgan.org/exhibitions/current: HTTP 403",
+    "https://www.themorgan.org/exhibitions/upcoming: HTTP 403"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "The Museum of Modern Art",
+   "id": "moma",
+   "status": "unreachable",
+   "notes": [
+    "https://www.moma.org/calendar/exhibitions: HTTP 403"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "Whitney Museum of American Art",
+   "id": "whitney",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Solomon R. Guggenheim Museum",
+   "id": "guggenheim",
+   "status": "ok",
+   "notes": [
+    "https://www.guggenheim.org/exhibitions: little text, retried in browser"
+   ],
+   "shows": 3,
+   "changed": true
+  },
+  {
+   "venue": "Neue Galerie New York",
+   "id": "neue",
+   "status": "ok",
+   "notes": [],
+   "shows": 3,
+   "changed": true
+  },
+  {
+   "venue": "Hispanic Society Museum & Library",
+   "id": "hispanic-society",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Colnaghi New York",
+   "id": "colnaghi",
+   "status": "ai_error",
+   "notes": [
+    "https://colnaghi.com/exhibitions: AI could not read page (ReadTimeout)"
+   ],
+   "shows": 0,
+   "changed": true
+  },
+  {
+   "venue": "Forum Gallery",
+   "id": "forum",
+   "status": "ok",
+   "notes": [
+    "https://www.forumgallery.com/exhibitions/: little text, retried in browser"
+   ],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Gallery Henoch",
+   "id": "henoch",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Louis K. Meisel Gallery",
+   "id": "meisel",
+   "status": "unreachable",
+   "notes": [
+    "https://meiselgallery.com/exhibitions/: HTTP 202"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "David Zwirner",
+   "id": "zwirner",
+   "status": "unreachable",
+   "notes": [
+    "https://www.davidzwirner.com/exhibitions: HTTP 403"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "Gagosian",
+   "id": "gagosian",
+   "status": "ok",
+   "notes": [],
+   "shows": 2,
+   "changed": true
+  },
+  {
+   "venue": "MoMA PS1",
+   "id": "moma-ps1",
+   "status": "ok",
+   "notes": [],
+   "shows": 2,
+   "changed": true
+  },
+  {
+   "venue": "The Noguchi Museum",
+   "id": "noguchi",
+   "status": "ok",
+   "notes": [],
+   "shows": 3,
+   "changed": true
+  },
+  {
+   "venue": "SculptureCenter",
+   "id": "sculpturecenter",
+   "status": "unreachable",
+   "notes": [
+    "https://www.sculpture-center.org/exhibitions: HTTP 404"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "Brooklyn Museum",
+   "id": "brooklyn-museum",
+   "status": "unreachable",
+   "notes": [
+    "https://www.brooklynmuseum.org/exhibitions: HTTP 429"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "Pioneer Works",
+   "id": "pioneer-works",
+   "status": "unreachable",
+   "notes": [
+    "https://pioneerworks.org/exhibitions: little text, retried in browser",
+    "https://pioneerworks.org/exhibitions: browser: TimeoutError"
+   ],
+   "shows": 0,
+   "changed": false
+  },
+  {
+   "venue": "Sotheby's (Breuer Building)",
+   "id": "sothebys",
+   "status": "ok",
+   "notes": [],
+   "shows": 3,
+   "changed": true
+  }
+ ]
+}

@@ -1,0 +1,730 @@
+{
+ "generated_at": "2026-11-20T21:42:04+00:00",
+ "model": "qwen2.5:3b",
+ "venues_scanned": 20,
+ "show_count": 22,
+ "needs_review": 3,
+ "minutes": 25.9,
+ "shows": [
+  {
+   "key": "siena-the-art-of-bronze-1450-1500",
+   "title": "Siena: The Art of Bronze, 1450–1500",
+   "artists": [],
+   "start_date": "2026-10-15",
+   "end_date": "2027-01-18",
+   "dates_as_written": "October 15, 2026 to January 18, 2027",
+   "summary": "The Frick Collection presents an exhibition focusing on Siena as a center of artistic excellence and technical innovation in bronze sculpture during the Italian Renaissance.",
+   "url": "https://www.frick.org/exhibitions/siena",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Renaissance",
+    "Ancient"
+   ],
+   "media": [
+    "Decorative arts"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "frick--siena-the-art-of-bronze-1450-1500",
+   "venue_id": "frick",
+   "venue": {
+    "name": "The Frick Collection",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1 East 70th Street, New York, NY 10021",
+    "subway": "6 to 68 St–Hunter College",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "kent-monkman-officer-and-laughing-girl",
+   "title": "Kent Monkman: Officer and Laughing Girl",
+   "artists": [],
+   "start_date": "2026-11-12",
+   "end_date": "2027-02-22",
+   "dates_as_written": "November 12, 2026 to February 22, 2027",
+   "summary": "The Frick Collection presents an installation of new paintings by Kent Monkman, exploring historic European art and narratives from an Indigenous perspective.",
+   "url": "https://www.frick.org/exhibitions/monkman",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Indigenous"
+   ],
+   "media": [
+    "Painting"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "frick--kent-monkman-officer-and-laughing-girl",
+   "venue_id": "frick",
+   "venue": {
+    "name": "The Frick Collection",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1 East 70th Street, New York, NY 10021",
+    "subway": "6 to 68 St–Hunter College",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "roy-lichtenstein-like-new",
+   "title": "Roy Lichtenstein: Like New",
+   "artists": [],
+   "start_date": "2027-05-10",
+   "end_date": "2027-05-10",
+   "dates_as_written": "2027-05-10",
+   "summary": "The Whitney Museum of American Art is currently showcasing 'Roy Lichtenstein: Like New' until May 10, 2027.",
+   "url": "https://whitney.org/exhibitions/lichtenstein",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Pop Art"
+   ],
+   "media": [
+    "Painting"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "whitney--roy-lichtenstein-like-new",
+   "venue_id": "whitney",
+   "venue": {
+    "name": "Whitney Museum of American Art",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Meatpacking District",
+    "address": "99 Gansevoort Street, New York, NY 10014",
+    "subway": "A C E L to 14 St–8 Av",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "taryn-simon-father-country-i-do-love-you",
+   "title": "Taryn Simon: Father Country I Do Love You",
+   "artists": [],
+   "start_date": "2026-09-18",
+   "end_date": "2027-03-14",
+   "dates_as_written": "September 18, 2026–March 14, 2027",
+   "summary": "The Solomon R. Guggenheim Museum presents an interactive installation by Taryn Simon featuring never-before-seen photographs, text, video, and sculpture.",
+   "url": "https://www.guggenheim.org/exhibition/taryn-simon",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Conceptual & installation"
+   ],
+   "media": [
+    "Photography",
+    "Video"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "guggenheim--taryn-simon-father-country-i-do-love-you",
+   "venue_id": "guggenheim",
+   "venue": {
+    "name": "Solomon R. Guggenheim Museum",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1071 Fifth Avenue, New York, NY 10128",
+    "subway": "4 5 6 to 86 St",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "guggenheim-pop-1960-to-now",
+   "title": "Guggenheim Pop: 1960 to Now",
+   "artists": [],
+   "start_date": "2026-06-05",
+   "end_date": "2027-01-10",
+   "dates_as_written": "June 5, 2026–January 10, 2027",
+   "summary": "This exhibition features Pop art from the collection and its enduring influence on contemporary artists, including works by Andy Warhol and Maurizio Cattelan.",
+   "url": "https://www.guggenheim.org/exhibition/guggenheim-pop",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Pop Art"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "guggenheim--guggenheim-pop-1960-to-now",
+   "venue_id": "guggenheim",
+   "venue": {
+    "name": "Solomon R. Guggenheim Museum",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1071 Fifth Avenue, New York, NY 10128",
+    "subway": "4 5 6 to 86 St",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "collection-in-focus-modern-european-currents",
+   "title": "Collection in Focus | Modern European Currents",
+   "artists": [],
+   "start_date": "2025-07-15",
+   "end_date": "2027-01-10",
+   "dates_as_written": "July 15, 2025–January 10, 2027",
+   "summary": "See how artists like Natalia Goncharova, Vasily Kandinsky, and Franz Marc transformed painting in the early 20th century.",
+   "url": "https://www.guggenheim.org/exhibition/collection-in-focus-modern-european-currents",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Modernism",
+    "Expressionism"
+   ],
+   "media": [
+    "Painting"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "guggenheim--collection-in-focus-modern-european-currents",
+   "venue_id": "guggenheim",
+   "venue": {
+    "name": "Solomon R. Guggenheim Museum",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1071 Fifth Avenue, New York, NY 10128",
+    "subway": "4 5 6 to 86 St",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "25th-anniversary-exhibition",
+   "title": "25th Anniversary Exhibition",
+   "artists": [],
+   "start_date": "2026-11-12",
+   "end_date": "2027-01-11",
+   "dates_as_written": "Nov 12, 2026 — Jan 11, 2027",
+   "summary": "The Neue Galerie New York is hosting an exhibition celebrating its 25th anniversary.",
+   "url": "https://www.neuegalerie.org/exhibitions/25thanniversary",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Academic & Salon"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "neue--25th-anniversary-exhibition",
+   "venue_id": "neue",
+   "venue": {
+    "name": "Neue Galerie New York",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1048 Fifth Avenue, New York, NY 10028",
+    "subway": "4 5 6 to 86 St",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "austrian-masterworks-from-the-neue-galerie",
+   "title": "Austrian Masterworks from the Neue Galerie",
+   "artists": [],
+   "start_date": "2027-01-13",
+   "end_date": null,
+   "dates_as_written": "Jan 13, 2027 & Onward",
+   "summary": "An exhibition featuring Austrian masterworks from the Neue Galerie is currently ongoing.",
+   "url": "https://www.neuegalerie.org/exhibitions/austrianmasterworks",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "neue--austrian-masterworks-from-the-neue-galerie",
+   "venue_id": "neue",
+   "venue": {
+    "name": "Neue Galerie New York",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1048 Fifth Avenue, New York, NY 10028",
+    "subway": "4 5 6 to 86 St",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "1910-portrait-of-a-year",
+   "title": "1910: Portrait of a Year",
+   "artists": [],
+   "start_date": "2027-02-18",
+   "end_date": "2027-05-24",
+   "dates_as_written": "Feb 18 — May 24, 2027",
+   "summary": "An exhibition focusing on 1910, showcasing portraits and artworks from that year, is set to run from February 18 to May 24, 2027.",
+   "url": "https://www.neuegalerie.org/exhibitions/1910",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Modernism",
+    "Expressionism"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "neue--1910-portrait-of-a-year",
+   "venue_id": "neue",
+   "venue": {
+    "name": "Neue Galerie New York",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1048 Fifth Avenue, New York, NY 10028",
+    "subway": "4 5 6 to 86 St",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "a-living-vision-the-sorolla-gallery-at-100",
+   "title": "A Living Vision: the Sorolla Gallery at 100",
+   "artists": [],
+   "start_date": "2026-05-21",
+   "end_date": "2027-05-27",
+   "dates_as_written": "May 21, 2026 – May 27, 2027",
+   "summary": "Current exhibition featuring Joaquín Sorolla's works, running from May 21, 2026 to May 27, 2027.",
+   "url": "https://hispanicsociety.org/exhibition/a-living-vision-the-sorolla-gallery-at-100/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Spanish"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "hispanic-society--a-living-vision-the-sorolla-gallery-at-100",
+   "venue_id": "hispanic-society",
+   "venue": {
+    "name": "Hispanic Society Museum & Library",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Washington Heights",
+    "address": "613 West 155th Street, New York, NY 10032",
+    "subway": "1 to 157 St",
+    "admission": "Free",
+    "free": true
+   }
+  },
+  {
+   "key": "g-daniel-massad",
+   "title": "G. Daniel Massad",
+   "artists": [],
+   "start_date": "2026-11-19",
+   "end_date": "2027-01-04",
+   "dates_as_written": "November 19, 2026 – January 4, 2027",
+   "summary": "The Forum Gallery is currently exhibiting G. Daniel Massad's work from November 19, 2026 to January 4, 2027.",
+   "url": "https://www.forumgallery.com/exhibitions/g-daniel-massad",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "forum--g-daniel-massad",
+   "venue_id": "forum",
+   "venue": {
+    "name": "Forum Gallery",
+    "type": "Gallery",
+    "area": "Manhattan",
+    "neighborhood": "Midtown",
+    "address": "41 East 57th Street, New York, NY 10022",
+    "subway": "N R W to 5 Av/59 St",
+    "admission": "Free",
+    "free": true
+   }
+  },
+  {
+   "key": "liminal-spaces-eric-zener",
+   "title": "Liminal Spaces : Eric Zener",
+   "artists": [],
+   "start_date": "2026-11-12",
+   "end_date": "2026-12-05",
+   "dates_as_written": "November 12 - December 5, 2026",
+   "summary": "Gallery Henoch is currently showcasing 'Liminal Spaces : Eric Zener' until December 5, 2026, featuring works by Eric Zener.",
+   "url": "https://www.galleryhenoch.com/exhibitions/87-liminal-spaces-eric-zener/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Conceptual & installation"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "henoch--liminal-spaces-eric-zener",
+   "venue_id": "henoch",
+   "venue": {
+    "name": "Gallery Henoch",
+    "type": "Gallery",
+    "area": "Manhattan",
+    "neighborhood": "Chelsea",
+    "address": "555 West 25th Street, New York, NY 10001",
+    "subway": "C E to 23 St",
+    "admission": "Free",
+    "free": true
+   }
+  },
+  {
+   "key": "friends-and-legends-the-collection-of-michael-chow",
+   "title": "Friends and Legends: The Collection of Michael Chow",
+   "artists": [],
+   "start_date": "2026-11-14",
+   "end_date": "2026-12-22",
+   "dates_as_written": "November 14 – December 22, 2026",
+   "summary": "Gagosian is hosting an exhibition of the collection of Michael Chow, titled 'Friends and Legends: The Collection of Michael Chow', from November 14 to December 22, 2026.",
+   "url": "https://gagosian.com/exhibitions/2026/friends-and-legends-the-collection-of-michael-chow-new-york/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Modernism"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "gagosian--friends-and-legends-the-collection-of-michael-chow",
+   "venue_id": "gagosian",
+   "venue": {
+    "name": "Gagosian",
+    "type": "Gallery",
+    "area": "Manhattan",
+    "neighborhood": "Chelsea",
+    "address": "555 West 24th Street, New York, NY 10011",
+    "subway": "C E to 23 St",
+    "admission": "Free",
+    "free": true
+   }
+  },
+  {
+   "key": "bea-scaccia-groomed",
+   "title": "Bea Scaccia Groomed",
+   "artists": [],
+   "start_date": "2026-09-22",
+   "end_date": "2026-12-23",
+   "dates_as_written": "September 22 – December 23, 2026",
+   "summary": "Gagosian is featuring the exhibition 'Bea Scaccia Groomed' from September 22 to December 23, 2026.",
+   "url": "https://gagosian.com/exhibitions/2026/bea-scaccia-groomed/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "gagosian--bea-scaccia-groomed",
+   "venue_id": "gagosian",
+   "venue": {
+    "name": "Gagosian",
+    "type": "Gallery",
+    "area": "Manhattan",
+    "neighborhood": "Chelsea",
+    "address": "555 West 24th Street, New York, NY 10011",
+    "subway": "C E to 23 St",
+    "admission": "Free",
+    "free": true
+   }
+  },
+  {
+   "key": "homeroom-artists-against-the-bomb",
+   "title": "Homeroom: Artists Against the Bomb",
+   "artists": [],
+   "start_date": "2026-11-20",
+   "end_date": null,
+   "dates_as_written": "On View",
+   "summary": "MoMA PS1 is currently featuring 'Homeroom: Artists Against the Bomb', an exhibition that is ongoing.",
+   "url": "https://www.momaps1.org/en/programs/838-homeroom-artists-against-the-bomb",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "moma-ps1--homeroom-artists-against-the-bomb",
+   "venue_id": "moma-ps1",
+   "venue": {
+    "name": "MoMA PS1",
+    "type": "Museum",
+    "area": "Long Island City",
+    "neighborhood": "Long Island City",
+    "address": "22-25 Jackson Avenue, Queens, NY 11101",
+    "subway": "7 to Court Sq · G to 21 St",
+    "admission": "Free during PS1's 50th-anniversary year",
+    "free": true
+   }
+  },
+  {
+   "key": "teresa-margolles-en-el-lugar-de-los-hechos-at-the-scene",
+   "title": "Teresa Margolles: En el lugar de los hechos (At the Scene)",
+   "artists": [],
+   "start_date": "2026-11-20",
+   "end_date": "2027-02-28",
+   "dates_as_written": "Through February 2027 On View",
+   "summary": "MoMA PS1 has an exhibition titled 'Teresa Margolles: En el lugar de los hechos (At the Scene)' that is currently on view and will end in February 2027.",
+   "url": "https://www.momaps1.org/en/programs/760-teresa-margolles",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "moma-ps1--teresa-margolles-en-el-lugar-de-los-hechos-at-the-scene",
+   "venue_id": "moma-ps1",
+   "venue": {
+    "name": "MoMA PS1",
+    "type": "Museum",
+    "area": "Long Island City",
+    "neighborhood": "Long Island City",
+    "address": "22-25 Jackson Avenue, Queens, NY 11101",
+    "subway": "7 to Court Sq · G to 21 St",
+    "admission": "Free during PS1's 50th-anniversary year",
+    "free": true
+   }
+  },
+  {
+   "key": "no-ordinary-light-akari-at-75",
+   "title": "No Ordinary Light: Akari at 75",
+   "artists": [],
+   "start_date": "2027-09-05",
+   "end_date": "2027-09-05",
+   "dates_as_written": "Through September 5, 2027",
+   "summary": "The Noguchi Museum is currently exhibiting 'No Ordinary Light: Akari at 75' until September 5, 2027.",
+   "url": "https://www.noguchi.org/museum/exhibitions/view/no-ordinary-light-akari-at-75/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "noguchi--no-ordinary-light-akari-at-75",
+   "venue_id": "noguchi",
+   "venue": {
+    "name": "The Noguchi Museum",
+    "type": "Museum",
+    "area": "Long Island City",
+    "neighborhood": "Long Island City",
+    "address": "9-01 33rd Road, Long Island City, NY 11106",
+    "subway": "N W to Broadway",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "isamu-noguchi-at-lever-house",
+   "title": "Isamu Noguchi at Lever House",
+   "artists": [],
+   "start_date": "2027-08-31",
+   "end_date": "2027-08-31",
+   "dates_as_written": "Through August 31, 2027",
+   "summary": "The Noguchi Museum is currently exhibiting 'Isamu Noguchi at Lever House' until August 31, 2027.",
+   "url": "https://www.noguchi.org/museum/exhibitions/view/isamu-noguchi-at-lever-house/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Modernism",
+    "Minimalism"
+   ],
+   "media": [
+    "Decorative arts"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "noguchi--isamu-noguchi-at-lever-house",
+   "venue_id": "noguchi",
+   "venue": {
+    "name": "The Noguchi Museum",
+    "type": "Museum",
+    "area": "Long Island City",
+    "neighborhood": "Long Island City",
+    "address": "9-01 33rd Road, Long Island City, NY 11106",
+    "subway": "N W to Broadway",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "light-and-stone-revisiting-noguchi-s-1986-venice-biennale",
+   "title": "Light and Stone: Revisiting Noguchi’s 1986 Venice Biennale",
+   "artists": [],
+   "start_date": "2027-05-09",
+   "end_date": "2027-05-09",
+   "dates_as_written": "Through May 9, 2027",
+   "summary": "The Noguchi Museum is currently exhibiting 'Light and Stone: Revisiting Noguchi’s 1986 Venice Biennale' until May 9, 2027.",
+   "url": "https://www.noguchi.org/museum/exhibitions/view/light-and-stone-revisiting-noguchis-1986-venice-biennale/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Modernism",
+    "Minimalism"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "noguchi--light-and-stone-revisiting-noguchi-s-1986-venice-biennale",
+   "venue_id": "noguchi",
+   "venue": {
+    "name": "The Noguchi Museum",
+    "type": "Museum",
+    "area": "Long Island City",
+    "neighborhood": "Long Island City",
+    "address": "9-01 33rd Road, Long Island City, NY 11106",
+    "subway": "N W to Broadway",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "old-masters-in-new-york",
+   "title": "Old Masters in New York",
+   "artists": [],
+   "start_date": null,
+   "end_date": null,
+   "dates_as_written": "This February",
+   "summary": "Sotheby's is showcasing masterworks ranging from the third millennia B.C. to the nineteenth century, including the sale of the Diane A. Nixon Collection, one of the finest drawings collections assembled in recent decades.",
+   "url": "https://www.sothebys.com/en/buy/auction/2026/master-drawings-from-the-collection-of-diane-a-nixon",
+   "source": "ai",
+   "dates_unclear": true,
+   "genres": [
+    "Ancient",
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "sothebys--old-masters-in-new-york",
+   "venue_id": "sothebys",
+   "venue": {
+    "name": "Sotheby's (Breuer Building)",
+    "type": "Auction house",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "945 Madison Avenue, New York, NY 10021",
+    "subway": "6 to 77 St",
+    "admission": "Free public previews",
+    "free": true
+   }
+  },
+  {
+   "key": "master-paintings-works-of-art-part-i",
+   "title": "Master Paintings & Works of Art Part I",
+   "artists": [],
+   "start_date": null,
+   "end_date": null,
+   "dates_as_written": "This year",
+   "summary": "The sale features works of exceptional rarity and provenance, including Antonello da Messina's double-sided Ecce Homo and a Mummy Portrait of a Man from Roman Egypt.",
+   "url": "https://www.sothebys.com/en/buy/auction/2026/master-paintings-sculpture-part-i",
+   "source": "ai",
+   "dates_unclear": true,
+   "genres": [
+    "Ancient",
+    "Hudson River School"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": false,
+   "id": "sothebys--master-paintings-works-of-art-part-i",
+   "venue_id": "sothebys",
+   "venue": {
+    "name": "Sotheby's (Breuer Building)",
+    "type": "Auction house",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "945 Madison Avenue, New York, NY 10021",
+    "subway": "6 to 77 St",
+    "admission": "Free public previews",
+    "free": true
+   }
+  },
+  {
+   "key": "master-works-on-paper-from-five-centuries",
+   "title": "Master Works on Paper from Five Centuries",
+   "artists": [],
+   "start_date": null,
+   "end_date": null,
+   "dates_as_written": "This year",
+   "summary": "The sale features a Rembrandt's Young Lion Resting, a rarity in Rembrandt's oeuvre and the only animal depiction by the artist remaining in private hands.",
+   "url": "https://www.sothebys.com/en/buy/auction/2026/master-works-on-paper-from-five-centuries",
+   "source": "ai",
+   "dates_unclear": true,
+   "genres": [
+    "Medieval",
+    "Renaissance",
+    "Baroque"
+   ],
+   "media": [
+    "Painting"
+   ],
+   "related": [],
+   "confident": true,
+   "id": "sothebys--master-works-on-paper-from-five-centuries",
+   "venue_id": "sothebys",
+   "venue": {
+    "name": "Sotheby's (Breuer Building)",
+    "type": "Auction house",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "945 Madison Avenue, New York, NY 10021",
+    "subway": "6 to 77 St",
+    "admission": "Free public previews",
+    "free": true
+   }
+  }
+ ]
+}

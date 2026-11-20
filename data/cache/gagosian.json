@@ -1,0 +1,47 @@
+{
+ "fingerprint": "9598fd8e29ed07cf3c2e60c53dff7cc9f18091df77d27ba775b35e62e833eca1",
+ "checked": "2026-11-20",
+ "shows": [
+  {
+   "key": "friends-and-legends-the-collection-of-michael-chow",
+   "title": "Friends and Legends: The Collection of Michael Chow",
+   "artists": [],
+   "start_date": "2026-11-14",
+   "end_date": "2026-12-22",
+   "dates_as_written": "November 14 \u2013 December 22, 2026",
+   "summary": "Gagosian is hosting an exhibition of the collection of Michael Chow, titled 'Friends and Legends: The Collection of Michael Chow', from November 14 to December 22, 2026.",
+   "url": "https://gagosian.com/exhibitions/2026/friends-and-legends-the-collection-of-michael-chow-new-york/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting",
+    "Modernism"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true
+  },
+  {
+   "key": "bea-scaccia-groomed",
+   "title": "Bea Scaccia Groomed",
+   "artists": [],
+   "start_date": "2026-09-22",
+   "end_date": "2026-12-23",
+   "dates_as_written": "September 22 \u2013 December 23, 2026",
+   "summary": "Gagosian is featuring the exhibition 'Bea Scaccia Groomed' from September 22 to December 23, 2026.",
+   "url": "https://gagosian.com/exhibitions/2026/bea-scaccia-groomed/",
+   "source": "ai",
+   "dates_unclear": false,
+   "genres": [
+    "Contemporary painting"
+   ],
+   "media": [
+    "Photography"
+   ],
+   "related": [],
+   "confident": true
+  }
+ ]
+}
