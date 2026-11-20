@@ -20,13 +20,19 @@ concurrency:
   group: weekly-scan
   cancel-in-progress: false
 
+env:
+  OLLAMA_MODEL: qwen2.5:3b
+  OLLAMA_MODELS: /home/runner/.ollama/models
+  BATCHES: 4
+
 jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 330
-    env:
-      OLLAMA_MODEL: qwen2.5:3b
-      OLLAMA_MODELS: /home/runner/.ollama/models
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]   # keep in step with BATCHES
     steps:
       - uses: actions/checkout@v4
 
@@ -55,18 +61,47 @@ jobs:
           for i in $(seq 1 30); do curl -sf http://localhost:11434/api/tags >/dev/null && break; sleep 2; done
           ollama pull "$OLLAMA_MODEL"
 
-      - name: Scan venues
+      - name: Scan this batch of venues
         run: |
-          ARGS=""
+          ARGS="--shard ${{ matrix.shard }} --of $BATCHES"
           if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
           if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
           python -m scanner.run $ARGS
 
-      - name: Save results to the repository
+      - uses: actions/upload-artifact@v4
         if: always()
+        with:
+          name: batch-${{ matrix.shard }}
+          path: data/parts/
+          retention-days: 7
+
+  combine:
+    needs: scan
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: data/parts/
+          pattern: batch-*
+          merge-multiple: true
+
+      - name: Combine batches
+        run: |
+          pip install requests
+          python -m scanner.merge
+
+      - name: Save results to the repository
         run: |
           git config user.name "nyc-art-scanner"
           git config user.email "actions@users.noreply.github.com"
           git add data
           git diff --cached --quiet || git commit -m "Weekly scan $(date -u +%Y-%m-%d)"
+          git pull --rebase -q origin main
           git push

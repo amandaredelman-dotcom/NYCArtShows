@@ -18,7 +18,12 @@ MIN_GAP_SECONDS = 3.0  # never hit the same site more than once every 3 seconds
 
 
 class FetchError(Exception):
-    pass
+    def __init__(self, msg: str, status: int | None = None):
+        super().__init__(msg)
+        self.status = status
+
+
+BLOCKED = {202, 401, 403, 429, 503}  # bot walls and rate limits: worth one try in a real browser
 
 
 def _allowed(url: str) -> bool:
@@ -49,20 +54,20 @@ def _wait_turn(url: str) -> None:
 def fetch_html(url: str, retries: int = 3) -> str:
     if not _allowed(url):
         raise FetchError("blocked by robots.txt")
-    last = None
+    last, status = None, None
     for attempt in range(retries):
         _wait_turn(url)
         try:
             r = requests.get(url, headers={"User-Agent": USER_AGENT, "Accept-Language": "en-US"}, timeout=TIMEOUT)
             if r.status_code == 200 and r.text:
                 return r.text
-            last = f"HTTP {r.status_code}"
-            if r.status_code in (403, 404, 410):
+            last, status = f"HTTP {r.status_code}", r.status_code
+            if r.status_code in (403, 404, 410, 429):
                 break  # retrying won't help
         except requests.RequestException as e:
             last = type(e).__name__
         time.sleep(2 ** attempt * 3)
-    raise FetchError(last or "unknown error")
+    raise FetchError(last or "unknown error", status)
 
 
 def fetch_rendered(url: str) -> str:

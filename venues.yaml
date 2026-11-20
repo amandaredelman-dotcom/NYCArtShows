@@ -210,7 +210,7 @@
   admission: Suggested donation
   free: true
   urls:
-    - https://www.sculpture-center.org/exhibitions
+    - https://www.sculpture-center.org/
 
 - id: brooklyn-museum
   name: Brooklyn Museum
