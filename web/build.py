@@ -59,7 +59,7 @@ def assemble(today: dt.date) -> tuple[list[dict], dict]:
         return {"venue": v.get("name", ""), "type": v.get("type", ""), "area": v.get("area", ""),
                 "hood": v.get("neighborhood", ""), "address": v.get("address", ""), "subway": v.get("subway", "—"),
                 "admission": v.get("admission", "See venue"), "free": bool(v.get("free")),
-                "hours": v.get("hours", "See venue"), "access": v.get("access", "Check with venue")}
+                "hours": v.get("hours", "See venue")}
 
     for s in scan.get("shows", []) + web:
         sid = s.get("id") or f"{s['venue_id']}--{s.get('key', '')}"
@@ -82,7 +82,7 @@ def assemble(today: dt.date) -> tuple[list[dict], dict]:
             "url": lab.get("url", s.get("url")),
             "source": s.get("source", "scan"),
         }
-        for k in ("hours", "access", "admission"):
+        for k in ("hours", "admission"):
             if lab.get(k):
                 show[k] = lab[k]
         out.append(show)
