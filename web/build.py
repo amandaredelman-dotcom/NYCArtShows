@@ -9,7 +9,7 @@ Inputs
   venues.yaml, site/config.yaml, scanner/taxonomy.py
 
 Outputs
-  web/index.html         the page to publish
+  docs/index.html        the public website (GitHub Pages); web/index.html is a local copy
   site/email.html        the Sunday email (HTML)    site/email.txt (plain-text version)
   data/review_queue.json shows that still need genres or a date check
 
@@ -128,6 +128,10 @@ def build_page(shows, meta, cfg, today):
                .replace("__PRESETS__", js(presets(cfg))).replace("__SHOWS__", js(shows))
                .replace("__PERMANENT__", js(load(DATA / "permanent.json", []))).replace("__META__", js(meta)))
     (SITE / "index.html").write_text(page)
+    docs = ROOT / "docs"  # GitHub Pages serves this folder as the public website
+    docs.mkdir(exist_ok=True)
+    (docs / "index.html").write_text(page)
+    (docs / ".nojekyll").touch()
 
 
 def build_email(shows, meta, cfg, today, published):

@@ -47,11 +47,13 @@ Edit `data/labels.json`, keyed by show id:
 aren't published. Check the page's script parses (`node --check` on the extracted script).
 
 ## 5. Publish and email
-- Republish `web/index.html` to the artifact in `web/config.yaml` (`artifact_slug`), as `index.html`.
+- The website is `docs/index.html`, served by GitHub Pages at the `site_url` in `web/config.yaml`.
+  It goes live when the pull request below is merged; check the URL loads afterwards.
 - Send the email from Amanda's Gmail to the address given in the Sunday task's instructions (it is kept out of
   this public repository on purpose; never write it here): subject
   `On View New York · <Mon D>`, HTML body `web/email.html`, plain-text body `web/email.txt`.
-- Commit `data/labels.json`, `data/web_shows.json` and `data/published.json`, open a pull request and merge it.
+- Commit `docs/index.html`, `data/labels.json`, `data/web_shows.json` and `data/published.json`, open a pull
+  request and merge it. Do this before sending the email so its link shows this week's site.
 
 ## 6. If something goes wrong
 Publish and send whatever is ready by 6 PM. Add a one-line note at the top of the email about anything
