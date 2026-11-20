@@ -1,45 +1,48 @@
 {
- "generated_at": "2026-11-20T21:57:52+00:00",
+ "generated_at": "2026-11-20T22:23:46+00:00",
  "model": "qwen2.5:3b",
  "venues_scanned": 20,
- "show_count": 31,
+ "show_count": 32,
  "unreachable": [
-  "met",
   "zwirner",
-  "brooklyn-museum",
   "morgan",
   "pioneer-works",
   "moma"
  ],
  "needs_check": 7,
- "minutes": 4.7,
+ "minutes": 1.5,
  "venues": [
   {
    "venue": "The Met Fifth Avenue",
    "id": "met",
-   "status": "no_shows_found",
+   "status": "ok",
    "notes": [
     "https://www.metmuseum.org/exhibitions: HTTP 429, retried in browser",
-    "https://www.metmuseum.org/exhibitions: little text, retried in browser"
+    "https://www.metmuseum.org/exhibitions: little text, retried in browser",
+    "page unchanged since last scan; reused results"
    ],
    "shows": 0,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Whitney Museum of American Art",
    "id": "whitney",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Colnaghi New York",
    "id": "colnaghi",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "David Zwirner",
@@ -56,18 +59,18 @@
    "venue": "SculptureCenter",
    "id": "sculpturecenter",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 3,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "The Frick Collection",
    "id": "frick",
    "status": "ok",
-   "notes": [
-    "dropped 'Susanne de Court: Painting with Fire': title not found on page"
-   ],
-   "shows": 1,
+   "notes": [],
+   "shows": 2,
    "changed": true
   },
   {
@@ -75,39 +78,44 @@
    "id": "guggenheim",
    "status": "ok",
    "notes": [
-    "https://www.guggenheim.org/exhibitions: little text, retried in browser"
+    "https://www.guggenheim.org/exhibitions: little text, retried in browser",
+    "page unchanged since last scan; reused results"
    ],
    "shows": 3,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Forum Gallery",
    "id": "forum",
    "status": "ok",
    "notes": [
-    "https://www.forumgallery.com/exhibitions/: little text, retried in browser"
+    "https://www.forumgallery.com/exhibitions/: little text, retried in browser",
+    "page unchanged since last scan; reused results"
    ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Gagosian",
    "id": "gagosian",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 2,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Brooklyn Museum",
    "id": "brooklyn-museum",
-   "status": "no_shows_found",
+   "status": "ok",
    "notes": [
     "https://www.brooklynmuseum.org/exhibitions: HTTP 429, retried in browser",
-    "https://www.brooklynmuseum.org/exhibitions: little text, retried in browser"
+    "https://www.brooklynmuseum.org/exhibitions: little text, retried in browser",
+    "page unchanged since last scan; reused results"
    ],
    "shows": 0,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "The Morgan Library & Museum",
@@ -126,25 +134,31 @@
    "venue": "Neue Galerie New York",
    "id": "neue",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 3,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Gallery Henoch",
    "id": "henoch",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "MoMA PS1",
    "id": "moma-ps1",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 9,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Pioneer Works",
@@ -172,33 +186,41 @@
    "venue": "Hispanic Society Museum & Library",
    "id": "hispanic-society",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Louis K. Meisel Gallery",
    "id": "meisel",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "The Noguchi Museum",
    "id": "noguchi",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 1,
-   "changed": true
+   "changed": false
   },
   {
    "venue": "Sotheby's (Breuer Building)",
    "id": "sothebys",
    "status": "ok",
-   "notes": [],
+   "notes": [
+    "page unchanged since last scan; reused results"
+   ],
    "shows": 3,
-   "changed": true
+   "changed": false
   }
  ]
 }

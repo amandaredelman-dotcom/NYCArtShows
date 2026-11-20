@@ -1,18 +1,16 @@
 {
- "generated_at": "2026-11-20T21:57:52+00:00",
+ "generated_at": "2026-11-20T22:23:46+00:00",
  "model": "qwen2.5:3b",
  "venues_scanned": 20,
- "show_count": 31,
+ "show_count": 32,
  "unreachable": [
-  "met",
   "zwirner",
-  "brooklyn-museum",
   "morgan",
   "pioneer-works",
   "moma"
  ],
  "needs_check": 7,
- "minutes": 4.7,
+ "minutes": 1.5,
  "shows": [
   {
    "key": "arie-di-teste-italian-oil-paintings-on-paper-1500-1800",
@@ -693,11 +691,35 @@
    "start_date": "2026-11-12",
    "end_date": "2027-02-22",
    "dates_as_written": "November 12, 2026 to February 22, 2027",
-   "summary": "The Frick Collection will present an installation of new paintings by the contemporary artist Kent Monkman, exploring historic European art and narratives from an Indigenous perspective.",
+   "summary": "The Frick Collection presents an installation of new paintings by Kent Monkman, exploring themes of colonization and representation inspired by Johannes Vermeer's 'Officer and Laughing Girl'.",
    "url": "https://www.frick.org/exhibitions/monkman",
    "source": "ai",
    "needs_check": false,
    "id": "frick--kent-monkman-officer-and-laughing-girl",
+   "venue_id": "frick",
+   "venue": {
+    "name": "The Frick Collection",
+    "type": "Museum",
+    "area": "Manhattan",
+    "neighborhood": "Upper East Side",
+    "address": "1 East 70th Street, New York, NY 10021",
+    "subway": "6 to 68 St–Hunter College",
+    "admission": "Ticketed",
+    "free": false
+   }
+  },
+  {
+   "key": "siena-the-art-of-bronze-1450-1500",
+   "title": "Siena: The Art of Bronze, 1450–1500",
+   "artists": [],
+   "start_date": "2026-10-15",
+   "end_date": "2027-01-18",
+   "dates_as_written": "October 15, 2026 to January 18, 2027",
+   "summary": "An exhibition focusing on Sienese bronze sculpture during the Italian Renaissance, featuring works from Tuscany.",
+   "url": "https://www.frick.org/exhibitions/siena",
+   "source": "ai",
+   "needs_check": false,
+   "id": "frick--siena-the-art-of-bronze-1450-1500",
    "venue_id": "frick",
    "venue": {
     "name": "The Frick Collection",
