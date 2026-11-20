@@ -1,0 +1,42 @@
+{
+ "fingerprint": "7b9adb348badae5c8b2b5d301381db9dd829331c2d4e43218edc0c4c0335b38b",
+ "checked": "2026-11-20",
+ "shows": [
+  {
+   "key": "25th-anniversary-exhibition",
+   "title": "25th Anniversary Exhibition",
+   "artists": [],
+   "start_date": "2026-11-12",
+   "end_date": "2027-01-11",
+   "dates_as_written": "Nov 12, 2026 — Jan 11, 2027",
+   "summary": "The Neue Galerie New York is hosting an exhibition celebrating its 25th anniversary, featuring works from its collection.",
+   "url": "https://www.neuegalerie.org/exhibitions/25thanniversary",
+   "source": "ai",
+   "needs_check": false
+  },
+  {
+   "key": "austrian-masterworks",
+   "title": "Austrian Masterworks",
+   "artists": [],
+   "start_date": "2027-01-13",
+   "end_date": null,
+   "dates_as_written": "Jan 13, 2027 & Onward",
+   "summary": "The Neue Galerie New York is showcasing Austrian masterworks from its collection, with an exhibition that will continue beyond January 13, 2027.",
+   "url": "https://www.neuegalerie.org/exhibitions/austrianmasterworks",
+   "source": "ai",
+   "needs_check": false
+  },
+  {
+   "key": "1910-portrait-of-a-year",
+   "title": "1910: Portrait of a Year",
+   "artists": [],
+   "start_date": "2027-02-18",
+   "end_date": "2027-05-24",
+   "dates_as_written": "Feb 18 — May 24, 2027",
+   "summary": "The Neue Galerie New York is presenting an exhibition titled '1910: Portrait of a Year', focusing on the year 1910 and its cultural significance.",
+   "url": "https://www.neuegalerie.org/exhibitions/1910",
+   "source": "ai",
+   "needs_check": false
+  }
+ ]
+}

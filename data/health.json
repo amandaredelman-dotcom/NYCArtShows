@@ -1,55 +1,72 @@
 {
- "generated_at": "2026-11-20T21:42:04+00:00",
+ "generated_at": "2026-11-20T21:57:52+00:00",
  "model": "qwen2.5:3b",
  "venues_scanned": 20,
- "show_count": 22,
- "needs_review": 3,
- "minutes": 25.9,
+ "show_count": 31,
+ "unreachable": [
+  "met",
+  "zwirner",
+  "brooklyn-museum",
+  "morgan",
+  "pioneer-works",
+  "moma"
+ ],
+ "needs_check": 7,
+ "minutes": 4.7,
  "venues": [
   {
    "venue": "The Met Fifth Avenue",
    "id": "met",
-   "status": "unreachable",
+   "status": "no_shows_found",
    "notes": [
-    "https://www.metmuseum.org/exhibitions: HTTP 429"
+    "https://www.metmuseum.org/exhibitions: HTTP 429, retried in browser",
+    "https://www.metmuseum.org/exhibitions: little text, retried in browser"
    ],
    "shows": 0,
-   "changed": false
-  },
-  {
-   "venue": "The Frick Collection",
-   "id": "frick",
-   "status": "ok",
-   "notes": [],
-   "shows": 2,
    "changed": true
-  },
-  {
-   "venue": "The Morgan Library & Museum",
-   "id": "morgan",
-   "status": "unreachable",
-   "notes": [
-    "https://www.themorgan.org/exhibitions/current: HTTP 403",
-    "https://www.themorgan.org/exhibitions/upcoming: HTTP 403"
-   ],
-   "shows": 0,
-   "changed": false
-  },
-  {
-   "venue": "The Museum of Modern Art",
-   "id": "moma",
-   "status": "unreachable",
-   "notes": [
-    "https://www.moma.org/calendar/exhibitions: HTTP 403"
-   ],
-   "shows": 0,
-   "changed": false
   },
   {
    "venue": "Whitney Museum of American Art",
    "id": "whitney",
    "status": "ok",
    "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Colnaghi New York",
+   "id": "colnaghi",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "David Zwirner",
+   "id": "zwirner",
+   "status": "no_shows_found",
+   "notes": [
+    "https://www.davidzwirner.com/exhibitions: HTTP 403, retried in browser",
+    "https://www.davidzwirner.com/exhibitions: little text, retried in browser"
+   ],
+   "shows": 0,
+   "changed": true
+  },
+  {
+   "venue": "SculptureCenter",
+   "id": "sculpturecenter",
+   "status": "ok",
+   "notes": [],
+   "shows": 3,
+   "changed": true
+  },
+  {
+   "venue": "The Frick Collection",
+   "id": "frick",
+   "status": "ok",
+   "notes": [
+    "dropped 'Susanne de Court: Painting with Fire': title not found on page"
+   ],
    "shows": 1,
    "changed": true
   },
@@ -64,32 +81,6 @@
    "changed": true
   },
   {
-   "venue": "Neue Galerie New York",
-   "id": "neue",
-   "status": "ok",
-   "notes": [],
-   "shows": 3,
-   "changed": true
-  },
-  {
-   "venue": "Hispanic Society Museum & Library",
-   "id": "hispanic-society",
-   "status": "ok",
-   "notes": [],
-   "shows": 1,
-   "changed": true
-  },
-  {
-   "venue": "Colnaghi New York",
-   "id": "colnaghi",
-   "status": "ai_error",
-   "notes": [
-    "https://colnaghi.com/exhibitions: AI could not read page (ReadTimeout)"
-   ],
-   "shows": 0,
-   "changed": true
-  },
-  {
    "venue": "Forum Gallery",
    "id": "forum",
    "status": "ok",
@@ -97,6 +88,46 @@
     "https://www.forumgallery.com/exhibitions/: little text, retried in browser"
    ],
    "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Gagosian",
+   "id": "gagosian",
+   "status": "ok",
+   "notes": [],
+   "shows": 2,
+   "changed": true
+  },
+  {
+   "venue": "Brooklyn Museum",
+   "id": "brooklyn-museum",
+   "status": "no_shows_found",
+   "notes": [
+    "https://www.brooklynmuseum.org/exhibitions: HTTP 429, retried in browser",
+    "https://www.brooklynmuseum.org/exhibitions: little text, retried in browser"
+   ],
+   "shows": 0,
+   "changed": true
+  },
+  {
+   "venue": "The Morgan Library & Museum",
+   "id": "morgan",
+   "status": "no_shows_found",
+   "notes": [
+    "https://www.themorgan.org/exhibitions/current: HTTP 403, retried in browser",
+    "https://www.themorgan.org/exhibitions/current: little text, retried in browser",
+    "https://www.themorgan.org/exhibitions/upcoming: HTTP 403, retried in browser",
+    "https://www.themorgan.org/exhibitions/upcoming: little text, retried in browser"
+   ],
+   "shows": 0,
+   "changed": true
+  },
+  {
+   "venue": "Neue Galerie New York",
+   "id": "neue",
+   "status": "ok",
+   "notes": [],
+   "shows": 3,
    "changed": true
   },
   {
@@ -108,68 +139,12 @@
    "changed": true
   },
   {
-   "venue": "Louis K. Meisel Gallery",
-   "id": "meisel",
-   "status": "unreachable",
-   "notes": [
-    "https://meiselgallery.com/exhibitions/: HTTP 202"
-   ],
-   "shows": 0,
-   "changed": false
-  },
-  {
-   "venue": "David Zwirner",
-   "id": "zwirner",
-   "status": "unreachable",
-   "notes": [
-    "https://www.davidzwirner.com/exhibitions: HTTP 403"
-   ],
-   "shows": 0,
-   "changed": false
-  },
-  {
-   "venue": "Gagosian",
-   "id": "gagosian",
-   "status": "ok",
-   "notes": [],
-   "shows": 2,
-   "changed": true
-  },
-  {
    "venue": "MoMA PS1",
    "id": "moma-ps1",
    "status": "ok",
    "notes": [],
-   "shows": 2,
+   "shows": 9,
    "changed": true
-  },
-  {
-   "venue": "The Noguchi Museum",
-   "id": "noguchi",
-   "status": "ok",
-   "notes": [],
-   "shows": 3,
-   "changed": true
-  },
-  {
-   "venue": "SculptureCenter",
-   "id": "sculpturecenter",
-   "status": "unreachable",
-   "notes": [
-    "https://www.sculpture-center.org/exhibitions: HTTP 404"
-   ],
-   "shows": 0,
-   "changed": false
-  },
-  {
-   "venue": "Brooklyn Museum",
-   "id": "brooklyn-museum",
-   "status": "unreachable",
-   "notes": [
-    "https://www.brooklynmuseum.org/exhibitions: HTTP 429"
-   ],
-   "shows": 0,
-   "changed": false
   },
   {
    "venue": "Pioneer Works",
@@ -181,6 +156,41 @@
    ],
    "shows": 0,
    "changed": false
+  },
+  {
+   "venue": "The Museum of Modern Art",
+   "id": "moma",
+   "status": "no_shows_found",
+   "notes": [
+    "https://www.moma.org/calendar/exhibitions: HTTP 403, retried in browser",
+    "https://www.moma.org/calendar/exhibitions: little text, retried in browser"
+   ],
+   "shows": 0,
+   "changed": true
+  },
+  {
+   "venue": "Hispanic Society Museum & Library",
+   "id": "hispanic-society",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "Louis K. Meisel Gallery",
+   "id": "meisel",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
+  },
+  {
+   "venue": "The Noguchi Museum",
+   "id": "noguchi",
+   "status": "ok",
+   "notes": [],
+   "shows": 1,
+   "changed": true
   },
   {
    "venue": "Sotheby's (Breuer Building)",

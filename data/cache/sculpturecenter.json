@@ -1,0 +1,42 @@
+{
+ "fingerprint": "c2df07bbcba4b818dc5eba7f51254354aad90c30ae1c63d6bc03fd69e69b438c",
+ "checked": "2026-11-20",
+ "shows": [
+  {
+   "key": "aziz-hazara-coming-home",
+   "title": "Aziz Hazara: Coming Home",
+   "artists": [],
+   "start_date": "2026-09-19",
+   "end_date": "2026-12-28",
+   "dates_as_written": "Sep 19–Dec 28, 2026",
+   "summary": "The SculptureCenter is currently showcasing Aziz Hazara's 'Coming Home', a part of their Commissioning Program, with the exhibition running from September 19 to December 28, 2026.",
+   "url": "https://www.sculpture-center.org/exhibitions/14935/aziz-hazara-coming-home",
+   "source": "ai",
+   "needs_check": false
+  },
+  {
+   "key": "cevdet-erek-americas",
+   "title": "Cevdet Erek: Americas",
+   "artists": [],
+   "start_date": "2026-09-19",
+   "end_date": "2026-12-28",
+   "dates_as_written": "Sep 19–Dec 28, 2026",
+   "summary": "The SculptureCenter is currently featuring Cevdet Erek's 'Americas', another Commissioning Program exhibition, which runs from September 19 to December 28, 2026.",
+   "url": "https://www.sculpture-center.org/exhibitions/14942/cevdet-erek-americas",
+   "source": "ai",
+   "needs_check": false
+  },
+  {
+   "key": "yining-fei-feral-sediment",
+   "title": "Yining Fei: Feral Sediment",
+   "artists": [],
+   "start_date": "2026-09-19",
+   "end_date": "2026-12-28",
+   "dates_as_written": "Sep 19–Dec 28, 2026",
+   "summary": "The SculptureCenter is currently presenting Yining Fei's 'Feral Sediment', part of their Commissioning Program, with the exhibition running from September 19 to December 28, 2026.",
+   "url": "https://www.sculpture-center.org/exhibitions/14938/yining-fei-feral-sediment",
+   "source": "ai",
+   "needs_check": false
+  }
+ ]
+}

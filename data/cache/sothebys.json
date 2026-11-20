@@ -1,0 +1,42 @@
+{
+ "fingerprint": "4e65fef7edf7fb6d565ac8473f7e4564ca56b20f9a334abf8814364f7cfd46a7",
+ "checked": "2026-11-20",
+ "shows": [
+  {
+   "key": "old-masters-in-new-york",
+   "title": "Old Masters in New York",
+   "artists": [],
+   "start_date": null,
+   "end_date": null,
+   "dates_as_written": "",
+   "summary": "Sotheby's is presenting Old Masters in New York, featuring masterworks from the third millennium B.C. to the nineteenth century, including the remarkable Diane A. Nixon Collection and the Master Paintings & Works of Art Part I sale.",
+   "url": "https://www.sothebys.com/en/buy/auction/2026/master-drawings-from-the-collection-of-diane-a-nixon",
+   "source": "ai",
+   "needs_check": true
+  },
+  {
+   "key": "master-paintings-works-of-art-part-i",
+   "title": "Master Paintings & Works of Art Part I",
+   "artists": [],
+   "start_date": null,
+   "end_date": null,
+   "dates_as_written": "February 1–4, 2026",
+   "summary": "This year's Master Paintings & Works of Art Part I sale features works of exceptional rarity and provenance, including Antonello da Messina's double-sided Ecce Homo and a magnificent 1500 millefleurs unicorn tapestry from the Cindy and Jay Pritzker Collection.",
+   "url": "https://www.sothebys.com/en/buy/auction/2026/master-paintings-sculpture-part-i",
+   "source": "ai",
+   "needs_check": true
+  },
+  {
+   "key": "master-works-on-paper-from-five-centuries",
+   "title": "Master Works on Paper from Five Centuries",
+   "artists": [],
+   "start_date": null,
+   "end_date": null,
+   "dates_as_written": "February 1–4, 2026",
+   "summary": "The highly anticipated Master Works on Paper from Five Centuries sale features Rembrandt's Young Lion Resting, a rarity in Rembrandt's oeuvre and the only animal depiction by the artist remaining in private hands.",
+   "url": "https://www.sothebys.com/en/buy/auction/2026/master-works-on-paper-from-five-centuries",
+   "source": "ai",
+   "needs_check": true
+  }
+ ]
+}
