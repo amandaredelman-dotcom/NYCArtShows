@@ -247,3 +247,27 @@
   free: true
   urls:
     - https://www.sothebys.com/en/series/masters-week
+
+- id: christies
+  name: Christie's Rockefeller Center
+  type: Auction house
+  area: Manhattan
+  neighborhood: Midtown
+  address: 20 Rockefeller Plaza, New York, NY 10020
+  subway: B D F M to 47–50 Sts–Rockefeller Ctr
+  admission: Free public previews
+  free: true
+  urls:
+    - https://www.christies.com/en/events/classic-week-new-york/what-is-on
+
+- id: armory
+  name: Park Avenue Armory
+  type: Art fair
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 643 Park Avenue, New York, NY 10065
+  subway: 6 to 68 St–Hunter College
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.thewintershow.org/

@@ -15,8 +15,8 @@ MON = r"(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?"
 
 # Month Day[, Year]   |   Day Month [Year]   |   M/D/YYYY
 PATTERNS = [
-    re.compile(rf"\b{MON}\s+(\d{{1,2}})(?:st|nd|rd|th)?(?:,?\s+(\d{{4}}))?", re.I),
-    re.compile(rf"\b(\d{{1,2}})(?:st|nd|rd|th)?\s+{MON}(?:,?\s+(\d{{4}}))?", re.I),
+    re.compile(rf"\b{MON}\s+(\d{{1,2}})(?!\d)(?:st|nd|rd|th)?(?:,?\s+(\d{{4}}))?", re.I),
+    re.compile(rf"\b(\d{{1,2}})(?!\d)(?:st|nd|rd|th)?\s+{MON}(?:,?\s+(\d{{4}}))?", re.I),
     re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b"),
 ]
 

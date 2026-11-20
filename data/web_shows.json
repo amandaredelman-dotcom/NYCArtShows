@@ -1,1 +1,171 @@
-[]
+[
+ {
+  "id": "met--orientalism-between-fact-and-fantasy",
+  "venue_id": "met",
+  "title": "Orientalism: Between Fact and Fantasy",
+  "start_date": "2026-06-12",
+  "end_date": "2027-02-28",
+  "summary": "About 180 works on how 19th-century Europe pictured the Middle East, hanging Gérôme, Delacroix and Ingres beside Islamic objects and the Ottoman painter Osman Hamdi Bey.",
+  "url": "https://www.metmuseum.org/exhibitions/orientalism-between-fact-and-fantasy",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "met--krasner-and-pollock-past-continuous",
+  "venue_id": "met",
+  "title": "Krasner and Pollock: Past Continuous",
+  "start_date": "2026-10-04",
+  "end_date": "2027-01-31",
+  "summary": "More than 120 paintings, works on paper and ephemera following Lee Krasner and Jackson Pollock side by side, each on their own terms.",
+  "url": "https://www.metmuseum.org/exhibitions/krasner-and-pollock-past-continuous",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "morgan--rembrandts-lions",
+  "venue_id": "morgan",
+  "title": "Rembrandt’s Lions: Art and Exile in the Dutch Republic",
+  "start_date": "2026-10-23",
+  "end_date": "2027-01-31",
+  "summary": "Drawings, etchings and paintings tracing migrants, exiles and refugees in Rembrandt’s Amsterdam and in his art.",
+  "url": "https://www.themorgan.org/exhibitions/rembrandts-lions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "morgan--johan-tobias-sergel",
+  "venue_id": "morgan",
+  "title": "Fantasy and Reality: The Art of Johan Tobias Sergel",
+  "start_date": "2026-10-30",
+  "end_date": "2027-01-31",
+  "summary": "The first major show outside Europe for the Swedish sculptor: marble, terracotta and drawings, with works by friends including Fuseli and Romney.",
+  "url": "https://www.themorgan.org/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "moma--brancusi-the-artist-and-his-studio",
+  "venue_id": "moma",
+  "title": "Brancusi: The Artist and His Studio",
+  "start_date": "2026-10-25",
+  "end_date": "2027-02-27",
+  "summary": "Constantin Brancusi’s sculpture seen through the studio where he made, arranged and photographed it.",
+  "url": "https://www.moma.org/calendar/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "moma--the-surrealist-book",
+  "venue_id": "moma",
+  "title": "The Surrealist Book",
+  "start_date": "2026-10-04",
+  "end_date": "2027-01-23",
+  "summary": "Artists’ books, prints and publications from the Surrealist movement.",
+  "url": "https://www.moma.org/calendar/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "brooklyn-museum--art-of-manga",
+  "venue_id": "brooklyn-museum",
+  "title": "Art of Manga",
+  "start_date": "2026-10-03",
+  "end_date": "2027-01-31",
+  "summary": "About 600 original drawings in the first large exhibition in the Americas to treat manga as an art form.",
+  "url": "https://www.brooklynmuseum.org/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "brooklyn-museum--manga-before-manga",
+  "venue_id": "brooklyn-museum",
+  "title": "Manga Before Manga: Japanese Art from the Collection",
+  "start_date": "2026-10-03",
+  "end_date": "2027-01-31",
+  "summary": "Twenty-one works from the museum’s Japanese collection showing where manga’s visual language came from.",
+  "url": "https://www.brooklynmuseum.org/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "brooklyn-museum--hopi-kachina-dolls",
+  "venue_id": "brooklyn-museum",
+  "title": "Hopi Kachina Dolls: Blessings for a Balanced World",
+  "start_date": "2026-10-02",
+  "end_date": "2027-06-27",
+  "summary": "The kachina doll tradition seen from the perspective of the Hopi girls who receive them.",
+  "url": "https://www.brooklynmuseum.org/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "brooklyn-museum--iris-van-herpen",
+  "venue_id": "brooklyn-museum",
+  "title": "Iris van Herpen: Sculpting the Senses",
+  "start_date": null,
+  "end_date": "2026-12-06",
+  "summary": "The Dutch designer’s first major New York exhibition: couture that behaves like sculpture.",
+  "url": "https://brooklynmuseum.org/exhibitions/iris-van-herpen",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "zwirner--yoshitomo-nara",
+  "venue_id": "zwirner",
+  "title": "Yoshitomo Nara",
+  "start_date": "2026-11-05",
+  "end_date": "2026-12-12",
+  "summary": "Nara’s first solo show with the gallery and his return to New York after nearly a decade, across both Chelsea spaces.",
+  "url": "https://www.davidzwirner.com/exhibitions",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "sothebys--masters-week-2027",
+  "venue_id": "sothebys",
+  "title": "Sotheby’s Masters Week preview",
+  "start_date": null,
+  "end_date": null,
+  "summary": "Free public viewing of Old Master paintings, drawings and sculpture before the winter sales.",
+  "url": "https://www.sothebys.com/en/series/masters-week",
+  "source": "web",
+  "checked": "2026-11-20",
+  "tba": "Late Jan–early Feb 2027",
+  "start_hint": "2027-01-29"
+ },
+ {
+  "id": "christies--classic-week-2027",
+  "venue_id": "christies",
+  "title": "Christie’s Classic Week preview",
+  "start_date": null,
+  "end_date": null,
+  "summary": "Free public viewing of Old Master paintings and sculpture ahead of Christie’s winter sales.",
+  "url": "https://www.christies.com/",
+  "source": "web",
+  "checked": "2026-11-20",
+  "tba": "Late Jan–early Feb 2027",
+  "start_hint": "2027-01-22"
+ },
+ {
+  "id": "armory--the-winter-show-2027",
+  "venue_id": "armory",
+  "title": "The Winter Show 2027",
+  "start_date": "2027-01-22",
+  "end_date": "2027-01-31",
+  "summary": "America’s leading art, antiques and design fair, with dealers covering thousands of years.",
+  "url": "https://www.thewintershow.org/",
+  "source": "web",
+  "checked": "2026-11-20"
+ },
+ {
+  "id": "armory--tefaf-new-york-2027",
+  "venue_id": "armory",
+  "title": "TEFAF New York 2027",
+  "start_date": "2027-05-14",
+  "end_date": "2027-05-18",
+  "summary": "A vetted fair of about 90 dealers, from antiquities and Old Masters to modern and contemporary art.",
+  "url": "https://www.tefaf.com/",
+  "source": "web",
+  "checked": "2026-11-20"
+ }
+]
