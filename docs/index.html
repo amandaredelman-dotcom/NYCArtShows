@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On View New York</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout idea: a darkened gallery — gilt accents on deep aubergine, wall-label cards, filters pinned like a catalogue index */
+  --bg:#110e13;
+  --surface:#1b171e;
+  --surface-2:#241f28;
+  --ink:#efe8dd;
+  --muted:#a69c94;
+  --line:#3a3340;
+  --gilt:#cfa860;
+  --gilt-soft:rgba(207,168,96,.14);
+  --closing:#e3825f;
+  --opening:#86c2ad;
+  --upcoming:#9fb1dd;
+  --tba:#8d8590;
+  --font-display:"Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(207,168,96,.10), transparent 60%);}
+a{color:var(--gilt)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gilt);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header.site{padding:44px 0 20px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);font-weight:600}
+h1{font-family:var(--font-display);font-weight:600;font-size:clamp(40px,6vw,64px);line-height:1;margin:8px 0 10px;text-wrap:balance}
+h1 em{font-style:italic;color:var(--gilt);font-weight:500}
+.sub{color:var(--muted);max-width:62ch;margin:0}
+.mock{margin-top:18px;display:inline-flex;gap:8px;align-items:center;border:1px dashed var(--gilt);color:var(--ink);background:var(--gilt-soft);padding:8px 12px;border-radius:6px;font-size:13px}
+h2{font-family:var(--font-display);font-weight:600;font-size:30px;margin:0 0 4px;text-wrap:balance}
+.section{padding:34px 0;border-bottom:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.hint{color:var(--muted);font-size:13px;margin:0}
+
+/* This week */
+.week{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.week-col{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.week-col h3{margin:0 0 10px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%}
+.week-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.week-col li{display:grid;gap:1px}
+.week-col li b{font-weight:600}
+.week-col li span{color:var(--muted);font-size:13px}
+.week-col li button{all:unset;cursor:pointer;font-weight:600}
+.week-col li button:hover{color:var(--gilt)}
+
+/* Filters */
+.filters{position:sticky;top:0;z-index:5;background:rgba(17,14,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 0}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filter-row + .filter-row{margin-top:10px}
+.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;min-width:72px}
+.chip{font:inherit;font-size:13px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip:hover{border-color:var(--gilt)}
+.chip[aria-pressed="true"]{background:var(--gilt);color:#1a140a;border-color:var(--gilt);font-weight:600}
+.chip.preset{border-style:dashed}
+details.genres{margin-top:10px}
+details.genres summary{cursor:pointer;color:var(--gilt);font-size:13px;font-weight:600;list-style:none}
+details.genres summary::-webkit-details-marker{display:none}
+.family{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.family .fam-name{font-family:var(--font-display);font-size:18px;min-width:150px;color:var(--muted)}
+select,input[type=search]{font:inherit;font-size:13px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+input[type=search]{min-width:220px}
+.count{margin-left:auto;color:var(--muted);font-size:13px}
+.toggle{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink);cursor:pointer}
+
+/* Cards */
+.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 18px 16px 22px;display:flex;flex-direction:column;gap:10px}
+.card::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;border-radius:0 3px 3px 0;background:var(--stripe,var(--line))}
+.status{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--stripe)}
+.card h3{font-family:var(--font-display);font-size:25px;line-height:1.1;margin:0;font-weight:600;text-wrap:balance}
+.venue{color:var(--ink);font-weight:500}
+.venue small{color:var(--muted);font-weight:400}
+.dates{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px}
+.blurb{margin:0;color:#d8d0c5;font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12px;border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:var(--ink)}
+.tag.genre{border-color:rgba(207,168,96,.5);color:var(--gilt)}
+.dialogue{font-size:13px;color:var(--ink);background:var(--surface-2);border-left:2px solid var(--gilt);padding:6px 10px;border-radius:0 6px 6px 0}
+.dialogue b{color:var(--gilt);font-weight:600}
+.why{font-size:12px;color:var(--gilt);font-weight:600;letter-spacing:.02em}
+.why.related{color:var(--muted)}
+dl.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:2px 0 0;font-size:13px;border-top:1px solid var(--line);padding-top:10px}
+dl.facts dt{color:var(--muted)}
+dl.facts dd{margin:0}
+.actions{display:flex;gap:10px;align-items:center;margin-top:auto;padding-top:4px;flex-wrap:wrap}
+.btn{font:inherit;font-size:14px;font-weight:600;text-decoration:none;border-radius:8px;padding:8px 14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn.in{background:var(--gilt);color:#1a140a;border:1px solid var(--gilt)}
+.btn.in:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--gilt)}
+.btn.disabled{opacity:.5;cursor:not-allowed}
+.empty{color:var(--muted);padding:30px;border:1px dashed var(--line);border-radius:10px;text-align:center}
+
+/* Timeline */
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.month{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.month h4{font-family:var(--font-display);font-size:22px;margin:0 0 8px;color:var(--gilt);font-weight:600}
+.month ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:13px}
+.month li span{display:block;color:var(--muted)}
+
+/* Permanent */
+.perm{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.perm article{border:1px solid var(--line);border-radius:10px;padding:14px;background:linear-gradient(180deg,var(--surface),var(--bg))}
+.perm h4{font-family:var(--font-display);font-size:21px;margin:0 0 4px;font-weight:600}
+.perm p{margin:0;color:var(--muted);font-size:13px}
+
+footer{padding:30px 0 50px;color:var(--muted);font-size:13px}
+footer h3{font-family:var(--font-display);color:var(--ink);font-size:22px;margin:0 0 6px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+
+@media (max-width:860px){.week{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.feed{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.family .fam-name{min-width:100%}input[type=search]{min-width:0;width:100%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="eyebrow">Manhattan · Long Island City · Brooklyn</div>
+    <h1>On View <em>New York</em></h1>
+    <p class="sub">Every current and upcoming exhibition worth crossing a borough for, labeled by period, medium and culture, so you can filter for exactly what you love.</p>
+    <div class="mock" role="note" id="banner"></div>
+  </div>
+</header>
+
+<section class="section" aria-labelledby="week-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2 id="week-h">This week</h2><p class="hint" id="asof"></p></div>
+    </div>
+    <div class="week">
+      <div class="week-col"><h3><span class="dot" style="background:var(--closing)"></span>Closing soon</h3><ul id="wk-closing"></ul></div>
+      <div class="week-col"><h3><span class="dot" style="background:var(--opening)"></span>Opening soon</h3><ul id="wk-opening"></ul></div>
+      <div class="week-col"><h3><span class="dot" style="background:var(--upcoming)"></span>On the horizon</h3><ul id="wk-horizon"></ul></div>
+    </div>
+  </div>
+</section>
+
+<nav class="filters" aria-label="Filters">
+  <div class="wrap">
+    <div class="filter-row" id="presets"><span class="label">Presets</span></div>
+    <details class="genres" id="genre-panel">
+      <summary>Choose genres ▾</summary>
+      <div id="families"></div>
+    </details>
+    <div class="filter-row" style="margin-top:10px">
+      <span class="label">Refine</span>
+      <select id="f-type" aria-label="Venue type"><option value="">All venue types</option></select>
+      <select id="f-area" aria-label="Area"><option value="">All areas</option><option>Manhattan</option><option>Long Island City</option><option>Brooklyn</option></select>
+      <select id="f-medium" aria-label="Medium"><option value="">All media</option></select>
+      <label class="toggle"><input type="checkbox" id="f-free"> Free only</label>
+      <label class="toggle"><input type="checkbox" id="f-related" checked> Include “in dialogue with”</label>
+      <input type="search" id="f-q" placeholder="Search artist, show or venue" aria-label="Search">
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+</nav>
+
+<section class="section" aria-labelledby="feed-h">
+  <div class="wrap">
+    <div class="section-head"><div><h2 id="feed-h">Exhibitions</h2><p class="hint" id="feed-hint">Showing everything. Pick a preset or genres to narrow it down.</p></div></div>
+    <div class="feed" id="feed"></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="tl-h">
+  <div class="wrap">
+    <div class="section-head"><div><h2 id="tl-h">The season ahead</h2><p class="hint">Fairs, auction previews and big openings through spring. Auction previews are free and open to the public.</p></div></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="perm-h">
+  <div class="wrap">
+    <div class="section-head"><div><h2 id="perm-h">Always on view</h2><p class="hint">Collections worth a visit any week.</p></div></div>
+    <div class="perm" id="perm"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap cols">
+    <div><h3>How shows are labeled</h3><p>Each show gets its main period or movement, its medium and, where it matters, its culture or region. Shows by living artists that respond to an earlier tradition are tagged “in dialogue with” that tradition. They appear when you filter for it, ranked after shows of the period itself.</p></div>
+    <div><h3>“I’m in”</h3><p>Opens Google Calendar with the show’s name, address, hours and closing date filled in, on the next Saturday it’s open. Change the day and time, then save. Nothing is added until you do.</p></div>
+    <div><h3>Updated weekly</h3><p>Listings refresh every Sunday at 6 PM Eastern. Always confirm hours on the venue’s own page before you go.</p></div>
+  </div>
+</footer>
+
+<script>
+const AS_OF = "2026-11-20"; // set by site/build.py
+const FAMILIES = {"Old Masters": ["Medieval", "Renaissance", "Baroque", "Dutch Golden Age", "Rococo"], "18th–19th century": ["Neoclassicism", "Romanticism", "Academic & Salon", "Hudson River School", "Realism (19th c.)", "Impressionism", "Post-Impressionism", "Symbolism"], "Modern": ["Modernism", "Expressionism", "Cubism", "Surrealism", "Modern sculpture", "Abstract Expressionism", "Pop Art", "Minimalism"], "Contemporary": ["Contemporary painting", "Contemporary realism", "Photorealism & hyperrealism", "Abstraction", "Conceptual & installation", "Video & new media", "Street art & graffiti"], "Photography": ["Photography"], "Design & fashion": ["Decorative arts", "Design & architecture", "Fashion"], "Ancient & world": ["Ancient", "Islamic world", "East Asian", "Japanese", "South Asian", "African", "Indigenous", "Latin American", "Spanish", "Oceanic"]};
+const PRESETS = {"Everything": [], "Old Masters": ["Medieval", "Renaissance", "Baroque", "Dutch Golden Age", "Rococo"], "18th–19th century": ["Neoclassicism", "Romanticism", "Academic & Salon", "Hudson River School", "Realism (19th c.)", "Impressionism", "Post-Impressionism", "Symbolism"], "Modern": ["Modernism", "Expressionism", "Cubism", "Surrealism", "Modern sculpture", "Abstract Expressionism", "Pop Art", "Minimalism"], "Contemporary": ["Contemporary painting", "Contemporary realism", "Photorealism & hyperrealism", "Abstraction", "Conceptual & installation", "Video & new media", "Street art & graffiti"], "Photography": ["Photography"], "Classical & hyperreal": ["Renaissance", "Baroque", "Dutch Golden Age", "Rococo", "Romanticism", "Academic & Salon", "Contemporary realism", "Photorealism & hyperrealism"]};
+const SHOWS = [{"id": "colnaghi--arie-di-teste-italian-oil-paintings-on-paper-1500-1800", "title": "Arie di Teste: Italian Oil Paintings on Paper, 1500–1800", "venue": "Colnaghi New York", "type": "Gallery", "area": "Manhattan", "hood": "Upper East Side", "address": "23 East 67th Street, Fourth Floor, New York, NY 10065", "subway": "6 to 68 St–Hunter College", "admission": "Free · by appointment", "free": true, "hours": "See venue", "start": "2026-10-23", "end": "2027-01-29", "through": false, "tba": null, "ongoing": false, "genres": ["Renaissance", "Baroque", "Rococo"], "media": ["Painting", "Works on paper"], "related": [], "blurb": "Italian oil studies of heads painted on paper, from the Renaissance through the 18th century.", "reception": "—", "url": "https://colnaghi.com/exhibitions/arie-di-teste-italian-oil-paintings-on-paper-1500-1800", "source": "ai"}, {"id": "forum--g-daniel-massad", "title": "G. Daniel Massad", "venue": "Forum Gallery", "type": "Gallery", "area": "Manhattan", "hood": "Midtown", "address": "41 East 57th Street, New York, NY 10022", "subway": "N R W to 5 Av/59 St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-11-19", "end": "2027-01-04", "through": false, "tba": null, "ongoing": false, "genres": ["Contemporary realism"], "media": ["Works on paper"], "related": [{"g": "Baroque", "note": "meticulous still lifes in the tradition of 17th-century still-life painting"}], "blurb": "Quietly luminous pastel still lifes by G. Daniel Massad.", "reception": "—", "url": "https://www.forumgallery.com/exhibitions/g-daniel-massad", "source": "ai"}, {"id": "gagosian--bea-scaccia-groomed", "title": "Bea Scaccia Groomed", "venue": "Gagosian", "type": "Gallery", "area": "Manhattan", "hood": "Chelsea", "address": "555 West 24th Street, New York, NY 10011", "subway": "C E to 23 St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-09-22", "end": "2026-12-23", "through": false, "tba": null, "ongoing": false, "genres": ["Contemporary painting"], "media": ["Painting"], "related": [], "blurb": "New work by Bea Scaccia.", "reception": "—", "url": "https://gagosian.com/exhibitions/2026/bea-scaccia-groomed/", "source": "ai"}, {"id": "gagosian--friends-and-legends-the-collection-of-michael-chow", "title": "Friends and Legends: The Collection of Michael Chow", "venue": "Gagosian", "type": "Gallery", "area": "Manhattan", "hood": "Chelsea", "address": "555 West 24th Street, New York, NY 10011", "subway": "C E to 23 St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-11-14", "end": "2026-12-22", "through": false, "tba": null, "ongoing": false, "genres": ["Contemporary painting", "Pop Art"], "media": ["Painting", "Sculpture"], "related": [], "blurb": "Works from the personal collection of restaurateur and artist Michael Chow, gathered from the artists he knew.", "reception": "—", "url": "https://gagosian.com/exhibitions/2026/friends-and-legends-the-collection-of-michael-chow-new-york/", "source": "ai"}, {"id": "henoch--liminal-spaces-eric-zener", "title": "Eric Zener: Liminal Spaces", "venue": "Gallery Henoch", "type": "Gallery", "area": "Manhattan", "hood": "Chelsea", "address": "555 West 25th Street, New York, NY 10001", "subway": "C E to 23 St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-11-12", "end": "2026-12-05", "through": false, "tba": null, "ongoing": false, "genres": ["Photorealism & hyperrealism", "Contemporary realism"], "media": ["Painting"], "related": [], "blurb": "New paintings by Eric Zener, known for figures suspended underwater and rendered in near-photographic detail.", "reception": "—", "url": "https://www.galleryhenoch.com/exhibitions/87-liminal-spaces-eric-zener/", "source": "ai"}, {"id": "hispanic-society--a-living-vision-the-sorolla-gallery-at-100", "title": "A Living Vision: the Sorolla Gallery at 100", "venue": "Hispanic Society Museum & Library", "type": "Museum", "area": "Manhattan", "hood": "Washington Heights", "address": "613 West 155th Street, New York, NY 10032", "subway": "1 to 157 St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-05-21", "end": "2027-05-27", "through": false, "tba": null, "ongoing": false, "genres": ["Impressionism", "Spanish"], "media": ["Painting"], "related": [], "blurb": "An outdoor display on Audubon Terrace marking 100 years of Sorolla’s room-sized Vision of Spain murals, which you can see inside.", "reception": "—", "url": "https://hispanicsociety.org/exhibition/a-living-vision-the-sorolla-gallery-at-100/", "source": "ai"}, {"id": "meisel--high-definition", "title": "High Definition", "venue": "Louis K. Meisel Gallery", "type": "Gallery", "area": "Manhattan", "hood": "SoHo", "address": "141 Prince Street, New York, NY 10012", "subway": "R W to Prince St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-11-19", "end": "2026-12-19", "through": false, "tba": null, "ongoing": false, "genres": ["Photorealism & hyperrealism"], "media": ["Painting"], "related": [], "blurb": "A group show of Photorealist painting from the gallery that championed the movement.", "reception": "—", "url": "https://www.meiselgallery.com/exhibition/high-definition/", "source": "ai"}, {"id": "moma-ps1--courtyard-commission-precious-okoyomon", "title": "Courtyard Commission: Precious Okoyomon", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": "2026-07-31", "end": null, "through": false, "tba": null, "ongoing": true, "genres": ["Conceptual & installation"], "media": ["Installation"], "related": [], "blurb": "Precious Okoyomon’s commission for PS1’s courtyard.", "reception": "—", "url": "https://www.momaps1.org/en/programs/747-courtyard-commission-precious-okoyomon", "source": "ai"}, {"id": "moma-ps1--esteban-cabeza-de-baca-ancestral-dreams", "title": "Esteban Cabeza de Baca: Ancestral Dreams", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": null, "end": null, "through": false, "tba": null, "ongoing": true, "genres": ["Contemporary painting", "Indigenous"], "media": ["Painting"], "related": [], "blurb": "A large mural by Esteban Cabeza de Baca, on view through spring 2027.", "reception": "—", "url": "https://www.momaps1.org/en/programs/795-esteban-cabeza-de-baca-ancestral-dreams", "source": "ai"}, {"id": "moma-ps1--hard-art-ends", "title": "Hard Art", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": "2026-11-05", "end": null, "through": false, "tba": null, "ongoing": true, "genres": ["Abstraction", "Contemporary painting"], "media": ["Painting", "Sculpture"], "related": [], "blurb": "More than 40 artists trace abstraction by Black American artists from 1969 to now.", "reception": "—", "url": "https://www.momaps1.org/en/programs/744-hard-art", "source": "ai"}, {"id": "moma-ps1--homeroom-artists-against-the-bomb", "title": "Homeroom: Artists Against the Bomb", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": null, "end": null, "through": false, "tba": null, "ongoing": true, "genres": ["Conceptual & installation"], "media": ["Installation", "Works on paper"], "related": [], "blurb": "Artists Against the Bomb, an international campaign for nuclear disarmament, takes over PS1’s Homeroom.", "reception": "—", "url": "https://www.momaps1.org/en/programs/838-homeroom-artists-against-the-bomb", "source": "ai"}, {"id": "moma-ps1--masao-gozu-windows-and-bars", "title": "Masao Gozu: Windows and Bars", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": null, "end": "2027-03-15", "through": true, "tba": null, "ongoing": false, "genres": ["Photography"], "media": ["Photography"], "related": [], "blurb": "Masao Gozu’s half-century of photographs of fellow New Yorkers.", "reception": "—", "url": "https://www.momaps1.org/en/programs/799-masao-gozu-windows-and-bars", "source": "ai"}, {"id": "moma-ps1--modern-spotlight-fred-wilson", "title": "Modern Spotlight: Fred Wilson", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": null, "end": "2027-09-06", "through": true, "tba": null, "ongoing": false, "genres": ["Conceptual & installation"], "media": ["Installation", "Sculpture"], "related": [], "blurb": "Fred Wilson, known for rearranging museum collections to expose whose stories they leave out.", "reception": "—", "url": "https://www.momaps1.org/en/programs/884-modern-spotlight-fred-wilson", "source": "ai"}, {"id": "moma-ps1--new-york-fashion-at-ps1-1980-1984", "title": "New York Fashion at PS1, 1980–1984", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": "2026-11-06", "end": "2027-03-15", "through": false, "tba": null, "ongoing": false, "genres": ["Fashion"], "media": ["Fashion & textiles", "Photography"], "related": [], "blurb": "Photographs, letters and ephemera from PS1’s early-1980s fashion program and the designers it showed.", "reception": "—", "url": "https://www.momaps1.org/en/programs/793-new-york-fashion-at-ps1-1980-1984", "source": "ai"}, {"id": "moma-ps1--teresa-margolles-en-el-lugar-de-los-hechos-at-the-scene", "title": "Teresa Margolles: En el lugar de los hechos (At the Scene)", "venue": "MoMA PS1", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "22-25 Jackson Avenue, Queens, NY 11101", "subway": "7 to Court Sq · G to 21 St", "admission": "Free during PS1's 50th-anniversary year", "free": true, "hours": "See venue", "start": "2026-09-24", "end": "2027-02-08", "through": false, "tba": null, "ongoing": false, "genres": ["Conceptual & installation", "Latin American"], "media": ["Installation"], "related": [], "blurb": "The Mexican artist’s first large US museum survey, with room-sized installations and a new commission.", "reception": "—", "url": "https://www.momaps1.org/en/programs/760-teresa-margolles", "source": "ai"}, {"id": "neue--1910-portrait-of-a-year", "title": "1910: Portrait of a Year", "venue": "Neue Galerie New York", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1048 Fifth Avenue, New York, NY 10028", "subway": "4 5 6 to 86 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2027-02-18", "end": "2027-05-24", "through": false, "tba": null, "ongoing": false, "genres": ["Expressionism", "Modernism"], "media": ["Painting", "Works on paper", "Decorative arts"], "related": [], "blurb": "Austrian and German art and design from a single pivotal year, 1910.", "reception": "—", "url": "https://www.neuegalerie.org/exhibitions/1910", "source": "ai"}, {"id": "neue--25th-anniversary-exhibition", "title": "25th Anniversary Exhibition", "venue": "Neue Galerie New York", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1048 Fifth Avenue, New York, NY 10028", "subway": "4 5 6 to 86 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-11-12", "end": "2027-01-11", "through": false, "tba": null, "ongoing": false, "genres": ["Modernism", "Symbolism", "Expressionism"], "media": ["Painting", "Decorative arts"], "related": [], "blurb": "Highlights from the museum’s collection of early 20th-century Austrian and German art, for its 25th anniversary.", "reception": "—", "url": "https://www.neuegalerie.org/exhibitions/25thanniversary", "source": "ai"}, {"id": "neue--austrian-masterworks", "title": "Austrian Masterworks", "venue": "Neue Galerie New York", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1048 Fifth Avenue, New York, NY 10028", "subway": "4 5 6 to 86 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2027-01-13", "end": null, "through": false, "tba": null, "ongoing": true, "genres": ["Symbolism", "Expressionism"], "media": ["Painting"], "related": [], "blurb": "Klimt, Schiele and Kokoschka from the Neue Galerie’s collection.", "reception": "—", "url": "https://www.neuegalerie.org/exhibitions/austrianmasterworks", "source": "ai"}, {"id": "sculpturecenter--aziz-hazara-coming-home", "title": "Aziz Hazara: Coming Home", "venue": "SculptureCenter", "type": "Nonprofit", "area": "Long Island City", "hood": "Long Island City", "address": "44-19 Purves Street, Long Island City, NY 11101", "subway": "7 to Court Sq · E M to Court Sq–23 St", "admission": "Suggested donation", "free": true, "hours": "See venue", "start": "2026-09-19", "end": "2026-12-28", "through": false, "tba": null, "ongoing": false, "genres": ["Conceptual & installation", "South Asian"], "media": ["Installation", "Sculpture"], "related": [], "blurb": "Aziz Hazara builds an installation from debris gathered at a single site, reflecting on return and the legacy of US intervention.", "reception": "—", "url": "https://www.sculpture-center.org/exhibitions/14935/aziz-hazara-coming-home", "source": "ai"}, {"id": "sculpturecenter--cevdet-erek-americas", "title": "Cevdet Erek: Americas", "venue": "SculptureCenter", "type": "Nonprofit", "area": "Long Island City", "hood": "Long Island City", "address": "44-19 Purves Street, Long Island City, NY 11101", "subway": "7 to Court Sq · E M to Court Sq–23 St", "admission": "Suggested donation", "free": true, "hours": "See venue", "start": "2026-09-19", "end": "2026-12-28", "through": false, "tba": null, "ongoing": false, "genres": ["Conceptual & installation"], "media": ["Installation"], "related": [], "blurb": "A site-specific sound commission by Cevdet Erek drawing on New York’s 1980s heavy underground music.", "reception": "—", "url": "https://www.sculpture-center.org/exhibitions/14942/cevdet-erek-americas", "source": "ai"}, {"id": "sculpturecenter--yining-fei-feral-sediment", "title": "Yining Fei: Feral Sediment", "venue": "SculptureCenter", "type": "Nonprofit", "area": "Long Island City", "hood": "Long Island City", "address": "44-19 Purves Street, Long Island City, NY 11101", "subway": "7 to Court Sq · E M to Court Sq–23 St", "admission": "Suggested donation", "free": true, "hours": "See venue", "start": "2026-09-19", "end": "2026-12-28", "through": false, "tba": null, "ongoing": false, "genres": ["Conceptual & installation"], "media": ["Installation", "Sculpture"], "related": [], "blurb": "New commissioned work by Yining Fei.", "reception": "—", "url": "https://www.sculpture-center.org/exhibitions/14938/yining-fei-feral-sediment", "source": "ai"}, {"id": "guggenheim--collection-in-focus-modern-european-currents", "title": "Collection in Focus | Modern European Currents", "venue": "Solomon R. Guggenheim Museum", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1071 Fifth Avenue, New York, NY 10128", "subway": "4 5 6 to 86 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2025-07-15", "end": "2027-01-10", "through": false, "tba": null, "ongoing": false, "genres": ["Expressionism", "Modernism"], "media": ["Painting"], "related": [], "blurb": "Goncharova, Kandinsky, Marc and others remaking painting in the early 20th century.", "reception": "—", "url": "https://www.guggenheim.org/exhibition/collection-in-focus-modern-european-currents", "source": "ai"}, {"id": "guggenheim--guggenheim-pop-1960-to-now", "title": "Guggenheim Pop: 1960 to Now", "venue": "Solomon R. Guggenheim Museum", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1071 Fifth Avenue, New York, NY 10128", "subway": "4 5 6 to 86 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-06-05", "end": "2027-01-10", "through": false, "tba": null, "ongoing": false, "genres": ["Pop Art", "Contemporary painting"], "media": ["Painting", "Sculpture"], "related": [], "blurb": "Pop art from the collection, from Warhol to the artists still working in its wake.", "reception": "—", "url": "https://www.guggenheim.org/exhibition/guggenheim-pop", "source": "ai"}, {"id": "guggenheim--taryn-simon-father-country-i-do-love-you", "title": "Taryn Simon: Father Country I Do Love You", "venue": "Solomon R. Guggenheim Museum", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1071 Fifth Avenue, New York, NY 10128", "subway": "4 5 6 to 86 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-09-18", "end": "2027-03-14", "through": false, "tba": null, "ongoing": false, "genres": ["Conceptual & installation", "Photography"], "media": ["Photography", "Installation", "Video"], "related": [], "blurb": "An installation by Taryn Simon combining photographs, text, video and sculpture.", "reception": "—", "url": "https://www.guggenheim.org/exhibition/taryn-simon", "source": "ai"}, {"id": "frick--kent-monkman-officer-and-laughing-girl", "title": "Kent Monkman: Officer and Laughing Girl", "venue": "The Frick Collection", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1 East 70th Street, New York, NY 10021", "subway": "6 to 68 St–Hunter College", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-11-12", "end": "2027-02-22", "through": false, "tba": null, "ongoing": false, "genres": ["Contemporary painting", "Indigenous"], "media": ["Painting"], "related": [{"g": "Dutch Golden Age", "note": "responds to Vermeer’s Officer and Laughing Girl, on view in the Frick’s collection"}], "blurb": "New paintings by the Cree artist Kent Monkman, answering one of the Frick’s three Vermeers from an Indigenous point of view.", "reception": "—", "url": "https://www.frick.org/exhibitions/monkman", "source": "ai"}, {"id": "frick--siena-the-art-of-bronze-1450-1500", "title": "Siena: The Art of Bronze, 1450–1500", "venue": "The Frick Collection", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1 East 70th Street, New York, NY 10021", "subway": "6 to 68 St–Hunter College", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-15", "end": "2027-01-18", "through": false, "tba": null, "ongoing": false, "genres": ["Renaissance"], "media": ["Sculpture"], "related": [], "blurb": "About forty Renaissance bronzes, many never shown outside Tuscany, making the case for Siena as a center of bronze casting.", "reception": "—", "url": "https://www.frick.org/exhibitions/siena", "source": "ai"}, {"id": "noguchi--no-ordinary-light-akari-at-75", "title": "No Ordinary Light: Akari at 75", "venue": "The Noguchi Museum", "type": "Museum", "area": "Long Island City", "hood": "Long Island City", "address": "9-01 33rd Road, Long Island City, NY 11106", "subway": "N W to Broadway", "admission": "Ticketed", "free": false, "hours": "See venue", "start": null, "end": "2027-09-05", "through": true, "tba": null, "ongoing": false, "genres": ["Modern sculpture", "Design & architecture", "Japanese"], "media": ["Sculpture", "Decorative arts"], "related": [], "blurb": "Seventy-five years of Noguchi’s Akari paper light sculptures.", "reception": "—", "url": "https://www.noguchi.org/museum/exhibitions/view/no-ordinary-light-akari-at-75/", "source": "ai"}, {"id": "whitney--roy-lichtenstein-like-new", "title": "Roy Lichtenstein: Like New", "venue": "Whitney Museum of American Art", "type": "Museum", "area": "Manhattan", "hood": "Meatpacking District", "address": "99 Gansevoort Street, New York, NY 10014", "subway": "A C E L to 14 St–8 Av", "admission": "Ticketed", "free": false, "hours": "See venue", "start": null, "end": "2027-05-10", "through": true, "tba": null, "ongoing": false, "genres": ["Pop Art"], "media": ["Painting", "Works on paper"], "related": [], "blurb": "Roy Lichtenstein at the Whitney.", "reception": "—", "url": "https://whitney.org/exhibitions/lichtenstein", "source": "ai"}, {"id": "met--orientalism-between-fact-and-fantasy", "title": "Orientalism: Between Fact and Fantasy", "venue": "The Met Fifth Avenue", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1000 Fifth Avenue, New York, NY 10028", "subway": "4 5 6 to 86 St", "admission": "Ticketed · pay what you wish for NY State residents", "free": false, "hours": "See venue", "start": "2026-06-12", "end": "2027-02-28", "through": false, "tba": null, "ongoing": false, "genres": ["Academic & Salon", "Romanticism", "Neoclassicism", "Islamic world"], "media": ["Painting", "Decorative arts", "Works on paper"], "related": [], "blurb": "About 180 works on how 19th-century Europe pictured the Middle East, hanging Gérôme, Delacroix and Ingres beside Islamic objects and the Ottoman painter Osman Hamdi Bey.", "reception": "—", "url": "https://www.metmuseum.org/exhibitions/orientalism-between-fact-and-fantasy", "source": "web"}, {"id": "met--krasner-and-pollock-past-continuous", "title": "Krasner and Pollock: Past Continuous", "venue": "The Met Fifth Avenue", "type": "Museum", "area": "Manhattan", "hood": "Upper East Side", "address": "1000 Fifth Avenue, New York, NY 10028", "subway": "4 5 6 to 86 St", "admission": "Ticketed · pay what you wish for NY State residents", "free": false, "hours": "See venue", "start": "2026-10-04", "end": "2027-01-31", "through": false, "tba": null, "ongoing": false, "genres": ["Abstract Expressionism"], "media": ["Painting", "Works on paper"], "related": [], "blurb": "More than 120 paintings, works on paper and ephemera following Lee Krasner and Jackson Pollock side by side, each on their own terms.", "reception": "—", "url": "https://www.metmuseum.org/exhibitions/krasner-and-pollock-past-continuous", "source": "web"}, {"id": "morgan--rembrandts-lions", "title": "Rembrandt’s Lions: Art and Exile in the Dutch Republic", "venue": "The Morgan Library & Museum", "type": "Museum", "area": "Manhattan", "hood": "Murray Hill", "address": "225 Madison Avenue, New York, NY 10016", "subway": "6 to 33 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-23", "end": "2027-01-31", "through": false, "tba": null, "ongoing": false, "genres": ["Dutch Golden Age", "Baroque"], "media": ["Works on paper", "Painting"], "related": [], "blurb": "Drawings, etchings and paintings tracing migrants, exiles and refugees in Rembrandt’s Amsterdam and in his art.", "reception": "—", "url": "https://www.themorgan.org/exhibitions/rembrandts-lions", "source": "web"}, {"id": "morgan--johan-tobias-sergel", "title": "Fantasy and Reality: The Art of Johan Tobias Sergel", "venue": "The Morgan Library & Museum", "type": "Museum", "area": "Manhattan", "hood": "Murray Hill", "address": "225 Madison Avenue, New York, NY 10016", "subway": "6 to 33 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-30", "end": "2027-01-31", "through": false, "tba": null, "ongoing": false, "genres": ["Neoclassicism", "Romanticism"], "media": ["Sculpture", "Works on paper"], "related": [], "blurb": "The first major show outside Europe for the Swedish sculptor: marble, terracotta and drawings, with works by friends including Fuseli and Romney.", "reception": "—", "url": "https://www.themorgan.org/exhibitions", "source": "web"}, {"id": "moma--brancusi-the-artist-and-his-studio", "title": "Brancusi: The Artist and His Studio", "venue": "The Museum of Modern Art", "type": "Museum", "area": "Manhattan", "hood": "Midtown", "address": "11 West 53rd Street, New York, NY 10019", "subway": "E M to 5 Av/53 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-25", "end": "2027-02-27", "through": false, "tba": null, "ongoing": false, "genres": ["Modern sculpture", "Modernism"], "media": ["Sculpture", "Photography"], "related": [], "blurb": "Constantin Brancusi’s sculpture seen through the studio where he made, arranged and photographed it.", "reception": "—", "url": "https://www.moma.org/calendar/exhibitions", "source": "web"}, {"id": "moma--the-surrealist-book", "title": "The Surrealist Book", "venue": "The Museum of Modern Art", "type": "Museum", "area": "Manhattan", "hood": "Midtown", "address": "11 West 53rd Street, New York, NY 10019", "subway": "E M to 5 Av/53 St", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-04", "end": "2027-01-23", "through": false, "tba": null, "ongoing": false, "genres": ["Surrealism"], "media": ["Books & manuscripts", "Works on paper"], "related": [], "blurb": "Artists’ books, prints and publications from the Surrealist movement.", "reception": "—", "url": "https://www.moma.org/calendar/exhibitions", "source": "web"}, {"id": "brooklyn-museum--art-of-manga", "title": "Art of Manga", "venue": "Brooklyn Museum", "type": "Museum", "area": "Brooklyn", "hood": "Prospect Heights", "address": "200 Eastern Parkway, Brooklyn, NY 11238", "subway": "2 3 to Eastern Pkwy–Brooklyn Museum", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-03", "end": "2027-01-31", "through": false, "tba": null, "ongoing": false, "genres": ["Japanese", "Contemporary painting"], "media": ["Works on paper"], "related": [], "blurb": "About 600 original drawings in the first large exhibition in the Americas to treat manga as an art form.", "reception": "—", "url": "https://www.brooklynmuseum.org/exhibitions", "source": "web"}, {"id": "brooklyn-museum--manga-before-manga", "title": "Manga Before Manga: Japanese Art from the Collection", "venue": "Brooklyn Museum", "type": "Museum", "area": "Brooklyn", "hood": "Prospect Heights", "address": "200 Eastern Parkway, Brooklyn, NY 11238", "subway": "2 3 to Eastern Pkwy–Brooklyn Museum", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-03", "end": "2027-01-31", "through": false, "tba": null, "ongoing": false, "genres": ["Japanese"], "media": ["Works on paper", "Painting"], "related": [], "blurb": "Twenty-one works from the museum’s Japanese collection showing where manga’s visual language came from.", "reception": "—", "url": "https://www.brooklynmuseum.org/exhibitions", "source": "web"}, {"id": "brooklyn-museum--hopi-kachina-dolls", "title": "Hopi Kachina Dolls: Blessings for a Balanced World", "venue": "Brooklyn Museum", "type": "Museum", "area": "Brooklyn", "hood": "Prospect Heights", "address": "200 Eastern Parkway, Brooklyn, NY 11238", "subway": "2 3 to Eastern Pkwy–Brooklyn Museum", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2026-10-02", "end": "2027-06-27", "through": false, "tba": null, "ongoing": false, "genres": ["Indigenous", "Decorative arts"], "media": ["Sculpture"], "related": [], "blurb": "The kachina doll tradition seen from the perspective of the Hopi girls who receive them.", "reception": "—", "url": "https://www.brooklynmuseum.org/exhibitions", "source": "web"}, {"id": "brooklyn-museum--iris-van-herpen", "title": "Iris van Herpen: Sculpting the Senses", "venue": "Brooklyn Museum", "type": "Museum", "area": "Brooklyn", "hood": "Prospect Heights", "address": "200 Eastern Parkway, Brooklyn, NY 11238", "subway": "2 3 to Eastern Pkwy–Brooklyn Museum", "admission": "Ticketed", "free": false, "hours": "See venue", "start": null, "end": "2026-12-06", "through": true, "tba": null, "ongoing": false, "genres": ["Fashion", "Design & architecture"], "media": ["Fashion & textiles", "Sculpture"], "related": [], "blurb": "The Dutch designer’s first major New York exhibition: couture that behaves like sculpture.", "reception": "—", "url": "https://brooklynmuseum.org/exhibitions/iris-van-herpen", "source": "web"}, {"id": "zwirner--yoshitomo-nara", "title": "Yoshitomo Nara", "venue": "David Zwirner", "type": "Gallery", "area": "Manhattan", "hood": "Chelsea", "address": "533 West 19th Street, New York, NY 10011", "subway": "C E to 23 St", "admission": "Free", "free": true, "hours": "See venue", "start": "2026-11-05", "end": "2026-12-12", "through": false, "tba": null, "ongoing": false, "genres": ["Contemporary painting", "Japanese"], "media": ["Painting", "Sculpture", "Works on paper"], "related": [], "blurb": "Nara’s first solo show with the gallery and his return to New York after nearly a decade, across both Chelsea spaces.", "reception": "—", "url": "https://www.davidzwirner.com/exhibitions", "source": "web"}, {"id": "sothebys--masters-week-2027", "title": "Sotheby’s Masters Week preview", "venue": "Sotheby's (Breuer Building)", "type": "Auction house", "area": "Manhattan", "hood": "Upper East Side", "address": "945 Madison Avenue, New York, NY 10021", "subway": "6 to 77 St", "admission": "Free public previews", "free": true, "hours": "See venue", "start": null, "end": null, "through": false, "tba": "Late Jan–early Feb 2027", "ongoing": false, "genres": ["Renaissance", "Baroque", "Dutch Golden Age", "Rococo"], "media": ["Painting", "Works on paper", "Sculpture"], "related": [], "blurb": "Free public viewing of Old Master paintings, drawings and sculpture before the winter sales.", "reception": "—", "url": "https://www.sothebys.com/en/series/masters-week", "source": "web"}, {"id": "christies--classic-week-2027", "title": "Christie’s Classic Week preview", "venue": "Christie's Rockefeller Center", "type": "Auction house", "area": "Manhattan", "hood": "Midtown", "address": "20 Rockefeller Plaza, New York, NY 10020", "subway": "B D F M to 47–50 Sts–Rockefeller Ctr", "admission": "Free public previews", "free": true, "hours": "See venue", "start": null, "end": null, "through": false, "tba": "Late Jan–early Feb 2027", "ongoing": false, "genres": ["Renaissance", "Baroque", "Dutch Golden Age", "Rococo"], "media": ["Painting", "Sculpture"], "related": [], "blurb": "Free public viewing of Old Master paintings and sculpture ahead of Christie’s winter sales.", "reception": "—", "url": "https://www.christies.com/", "source": "web"}, {"id": "armory--the-winter-show-2027", "title": "The Winter Show 2027", "venue": "Park Avenue Armory", "type": "Art fair", "area": "Manhattan", "hood": "Upper East Side", "address": "643 Park Avenue, New York, NY 10065", "subway": "6 to 68 St–Hunter College", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2027-01-22", "end": "2027-01-31", "through": false, "tba": null, "ongoing": false, "genres": ["Decorative arts"], "media": ["Decorative arts", "Painting", "Sculpture"], "related": [{"g": "Baroque", "note": "dealers bring Old Master paintings alongside antiques and design"}], "blurb": "America’s leading art, antiques and design fair, with dealers covering thousands of years.", "reception": "—", "url": "https://www.thewintershow.org/", "source": "web"}, {"id": "armory--tefaf-new-york-2027", "title": "TEFAF New York 2027", "venue": "Park Avenue Armory", "type": "Art fair", "area": "Manhattan", "hood": "Upper East Side", "address": "643 Park Avenue, New York, NY 10065", "subway": "6 to 68 St–Hunter College", "admission": "Ticketed", "free": false, "hours": "See venue", "start": "2027-05-14", "end": "2027-05-18", "through": false, "tba": null, "ongoing": false, "genres": ["Baroque", "Modernism", "Decorative arts"], "media": ["Painting", "Sculpture", "Decorative arts"], "related": [], "blurb": "A vetted fair of about 90 dealers, from antiquities and Old Masters to modern and contemporary art.", "reception": "—", "url": "https://www.tefaf.com/", "source": "web"}];
+const PERMANENT = [{"t": "Look Again: European Paintings 1300–1800", "v": "The Met · Upper East Side", "d": "More than 700 works in the reopened skylit galleries, including North America’s largest group of 17th-century Dutch paintings."}, {"t": "The Frick Collection", "v": "Upper East Side", "d": "Vermeer, Rembrandt, Holbein and Fragonard’s Rococo panels, in a Gilded Age mansion."}, {"t": "Sorolla’s Vision of Spain", "v": "Hispanic Society · Washington Heights", "d": "Sorolla’s room-sized murals of the regions of Spain, plus Goya, Velázquez and El Greco. Free."}, {"t": "The Noguchi Museum", "v": "Long Island City", "d": "Isamu Noguchi’s own museum and sculpture garden, a short walk from the East River."}];
+const META = {"venue_count": 21, "web_checked": 8, "unreachable": ["zwirner", "morgan", "pioneer-works", "moma"]};
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const D = s => new Date(s+"T12:00:00");
+const today = D(AS_OF);
+const DAY = 864e5;
+const fmt = (s,opt={month:"short",day:"numeric"}) => D(s).toLocaleDateString("en-US",opt);
+const fmtY = s => D(s).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+
+function status(s){
+  if(s.tba) return {k:"tba",label:"Dates to be announced",c:"var(--tba)"};
+  const st=s.start?D(s.start):null, en=s.end?D(s.end):null;
+  if(st&&st>today){ const d=Math.round((st-today)/DAY); return d<=14?{k:"opening",label:`Opens ${fmt(s.start)}`,c:"var(--opening)"}:{k:"upcoming",label:`Opens ${fmt(s.start)}`,c:"var(--upcoming)"}; }
+  if(!en) return {k:"onview",label:s.start?"On view":"Check dates",c:"var(--gilt)"};
+  const left=Math.round((en-today)/DAY);
+  if(left<=21) return {k:"closing",label:left<=0?"Last day":`Closes in ${left} days`,c:"var(--closing)"};
+  return {k:"onview",label:"On view",c:"var(--gilt)"};
+}
+
+function calLink(s){
+  const st=(s.start&&D(s.start)>today)?D(s.start):new Date(today);
+  let day=new Date(st);
+  while(day.getDay()!==6) day=new Date(day.getTime()+DAY);
+  if(s.end&&day>D(s.end)) day=st;
+  const ymd=day.toISOString().slice(0,10).replace(/-/g,"");
+  const details=`${s.title}\n${s.venue}\n${s.end?`On view through ${fmtY(s.end)}`:"Check dates on the venue page"}\nHours: ${s.hours}\nAdmission: ${s.admission}\nSubway: ${s.subway}\n${s.url}`;
+  const p=new URLSearchParams({action:"TEMPLATE",text:`Art: ${s.title}`,dates:`${ymd}T110000/${ymd}T130000`,ctz:"America/New_York",details,location:`${s.venue}, ${s.address}`});
+  return "https://calendar.google.com/calendar/render?"+p.toString();
+}
+
+/* ---------- state ---------- */
+let state={genres:new Set(),preset:"Everything",type:"",area:"",medium:"",free:false,related:true,q:""};
+try{const saved=JSON.parse(localStorage.getItem("onview-prefs")||"null"); if(saved){state={...state,...saved,genres:new Set(saved.genres||[])};}}catch(e){}
+function save(){try{localStorage.setItem("onview-prefs",JSON.stringify({...state,genres:[...state.genres]}));}catch(e){}}
+
+/* ---------- controls ---------- */
+function buildControls(){
+  const pr=$("#presets");
+  Object.keys(PRESETS).forEach(name=>{
+    const b=document.createElement("button");b.className="chip preset";b.type="button";b.textContent=name;b.dataset.preset=name;
+    b.onclick=()=>{state.preset=name;state.genres=new Set(PRESETS[name]);render();};
+    pr.appendChild(b);
+  });
+  const fam=$("#families");
+  Object.entries(FAMILIES).forEach(([f,gs])=>{
+    const row=document.createElement("div");row.className="family";
+    row.innerHTML=`<span class="fam-name">${esc(f)}</span>`;
+    gs.forEach(g=>{const b=document.createElement("button");b.type="button";b.className="chip";b.textContent=g;b.dataset.genre=g;
+      b.onclick=()=>{state.genres.has(g)?state.genres.delete(g):state.genres.add(g);state.preset="";render();};row.appendChild(b);});
+    fam.appendChild(row);
+  });
+  const types=[...new Set(SHOWS.map(s=>s.type))].sort();
+  types.forEach(t=>$("#f-type").insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`));
+  const media=[...new Set(SHOWS.flatMap(s=>s.media))].sort();
+  media.forEach(m=>$("#f-medium").insertAdjacentHTML("beforeend",`<option>${esc(m)}</option>`));
+  $("#f-type").onchange=e=>{state.type=e.target.value;render();};
+  $("#f-area").onchange=e=>{state.area=e.target.value;render();};
+  $("#f-medium").onchange=e=>{state.medium=e.target.value;render();};
+  $("#f-free").onchange=e=>{state.free=e.target.checked;render();};
+  $("#f-related").onchange=e=>{state.related=e.target.checked;render();};
+  $("#f-q").oninput=e=>{state.q=e.target.value.trim().toLowerCase();render();};
+}
+
+function matchOf(s){
+  if(!state.genres.size) return {rank:1,why:""};
+  const direct=s.genres.filter(g=>state.genres.has(g));
+  if(direct.length) return {rank:2,why:`Matches ${direct.join(", ")}`};
+  const rel=(s.related||[]).filter(r=>state.genres.has(r.g));
+  if(rel.length && state.related) return {rank:1,why:`In dialogue with ${rel.map(r=>r.g).join(", ")}`,related:true};
+  return null;
+}
+
+function card(s,m){
+  const st=status(s);
+  const dates=s.tba?`Expected ${esc(s.tba)}`:(!s.end&&!s.start)?"Dates on venue site":(!s.end)?`Opens ${fmtY(s.start)}${s.ongoing?" · ongoing":""}`:(s.through||!s.start)?`Through ${fmtY(s.end)}`:`${fmtY(s.start)} – ${fmtY(s.end)}`;
+  const rel=(s.related||[]).map(r=>`<div class="dialogue">In dialogue with <b>${esc(r.g)}</b>: ${esc(r.note)}</div>`).join("");
+  const why=m&&m.why?`<div class="why${m.related?" related":""}">${esc(m.why)}</div>`:"";
+  const inBtn=s.tba?`<span class="btn in disabled" aria-disabled="true" title="Dates not yet announced">I’m in</span>`:`<a class="btn in" href="${esc(calLink(s))}" target="_blank" rel="noopener">I’m in</a>`;
+  return `<article class="card" id="show-${s.id}" style="--stripe:${st.c}">
+    <span class="status"><span class="dot" style="background:${st.c}"></span>${esc(st.label)}</span>
+    <h3>${esc(s.title)}</h3>
+    <div class="venue">${esc(s.venue)} <small>· ${esc(s.hood)}, ${esc(s.area==="Long Island City"?"LIC":s.area)}</small></div>
+    <div class="dates">${dates}</div>
+    ${why}
+    <p class="blurb">${esc(s.blurb)}</p>
+    <div class="tags">${s.genres.map(g=>`<span class="tag genre">${esc(g)}</span>`).join("")}${s.media.map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>
+    ${rel}
+    <dl class="facts">
+      <dt>Admission</dt><dd>${esc(s.admission)}</dd>
+      <dt>Hours</dt><dd>${esc(s.hours)}</dd>
+      <dt>Subway</dt><dd>${esc(s.subway)}</dd>
+      <dt>Opening</dt><dd>${esc(s.reception)}</dd>
+    </dl>
+    <div class="actions">${inBtn}<a class="btn ghost" href="${esc(s.url)}" target="_blank" rel="noopener">Venue page ↗</a></div>
+  </article>`;
+}
+
+function render(){
+  save();
+  document.querySelectorAll("[data-preset]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.preset===state.preset));
+  document.querySelectorAll("[data-genre]").forEach(b=>b.setAttribute("aria-pressed",state.genres.has(b.dataset.genre)));
+  $("#f-type").value=state.type;$("#f-area").value=state.area;$("#f-medium").value=state.medium;$("#f-free").checked=state.free;$("#f-related").checked=state.related;
+  const order={closing:0,opening:1,onview:2,upcoming:3,tba:4};
+  const list=SHOWS.map(s=>({s,m:matchOf(s)})).filter(({s,m})=>{
+    if(!m) return false;
+    if(state.type&&s.type!==state.type) return false;
+    if(state.area&&s.area!==state.area) return false;
+    if(state.medium&&!s.media.includes(state.medium)) return false;
+    if(state.free&&!s.free) return false;
+    if(state.q&&!(`${s.title} ${s.venue} ${s.blurb} ${s.hood}`.toLowerCase().includes(state.q))) return false;
+    return true;
+  }).sort((a,b)=>(b.m.rank-a.m.rank)||(order[status(a.s).k]-order[status(b.s).k])||(D(a.s.end||"2099-12-31")-D(b.s.end||"2099-12-31")));
+  $("#feed").innerHTML=list.length?list.map(x=>card(x.s,x.m)).join(""):`<div class="empty">No shows match these filters yet. Try removing a genre or turning on “in dialogue with”.</div>`;
+  $("#count").textContent=`${list.length} of ${SHOWS.length} shows`;
+  $("#feed-hint").textContent=state.genres.size?`Filtered to ${[...state.genres].length} genre${state.genres.size>1?"s":""}. Direct matches first, then shows in dialogue with them.`:"Showing everything. Pick a preset or genres to narrow it down.";
+}
+
+function renderWeek(){
+  $("#asof").textContent=`As of Sunday, ${fmtY(AS_OF)}`;
+  const li=(s,extra)=>`<li><button type="button" data-jump="${s.id}">${esc(s.title)}</button><span>${esc(s.venue)} · ${extra}</span></li>`;
+  const closing=SHOWS.filter(s=>status(s).k==="closing").sort((a,b)=>D(a.end)-D(b.end));
+  const opening=SHOWS.filter(s=>status(s).k==="opening").sort((a,b)=>D(a.start)-D(b.start));
+  const horizon=SHOWS.filter(s=>["Art fair","Auction preview"].includes(s.type)).sort((a,b)=>D(a.start)-D(b.start)).slice(0,4);
+  $("#wk-closing").innerHTML=closing.map(s=>li(s,`closes ${fmt(s.end)}`)).join("")||"<li><span>Nothing closing in the next three weeks.</span></li>";
+  $("#wk-opening").innerHTML=opening.map(s=>li(s,`opens ${fmt(s.start)}`)).join("")||"<li><span>No openings in the next two weeks.</span></li>";
+  $("#wk-horizon").innerHTML=horizon.map(s=>li(s,s.tba?s.tba:`${fmt(s.start)}–${fmt(s.end)}`)).join("");
+  document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{
+    state={...state,genres:new Set(),preset:"Everything",type:"",area:"",medium:"",free:false,q:""};$("#f-q").value="";render();
+    const el=document.getElementById("show-"+b.dataset.jump); if(el){el.scrollIntoView({block:"center"});el.style.outline="2px solid var(--gilt)";setTimeout(()=>el.style.outline="",1600);}
+  });
+}
+
+function renderTimeline(){
+  const months=[];
+  for(let i=0;i<6;i++){const d=new Date(today.getFullYear(),today.getMonth()+i,1);months.push({y:d.getFullYear(),m:d.getMonth(),items:[]});}
+  const slot=(iso)=>{const d=D(iso);return months.find(x=>x.y===d.getFullYear()&&x.m===d.getMonth());};
+  const big=s=>["Art fair","Auction house","Auction preview"].includes(s.type);
+  SHOWS.forEach(s=>{
+    if(s.tba){const m=slot(s.start);if(m)m.items.push([s.title,`${s.venue} · dates TBA`,0]);return;}
+    if(s.start&&D(s.start)>today){const m=slot(s.start);if(m&&(big(s)||s.type==="Museum"))m.items.push([s.title,`${s.venue} · opens ${fmt(s.start)}`,big(s)?0:1]);}
+    if(s.end&&!big(s)&&s.type==="Museum"){const m=slot(s.end);if(m)m.items.push([`${s.title} closes`,`${s.venue} · ${fmt(s.end)}`,2]);}
+  });
+  $("#timeline").innerHTML=months.filter(m=>m.items.length).slice(0,5).map(m=>{
+    const label=new Date(m.y,m.m,1).toLocaleDateString("en-US",{month:"short",year:"numeric"});
+    const items=m.items.sort((a,b)=>a[2]-b[2]).slice(0,4);
+    return `<div class="month"><h4>${label}</h4><ul>${items.map(([a,b])=>`<li>${esc(a)}<span>${esc(b)}</span></li>`).join("")}</ul></div>`;}).join("");
+}
+
+function renderPerm(){
+  $("#perm").innerHTML=PERMANENT.map(p=>`<article><h4>${esc(p.t)}</h4><p>${esc(p.v)}</p><p style="margin-top:6px;color:var(--ink)">${esc(p.d)}</p></article>`).join("");
+}
+
+$("#banner").textContent=`${SHOWS.length} exhibitions across ${META.venue_count} venues · updated ${fmtY(AS_OF)}${META.web_checked?` · ${META.web_checked} venues checked by hand this week`:""}`;
+buildControls();renderWeek();renderTimeline();renderPerm();render();
+</script>
+</body>
+</html>

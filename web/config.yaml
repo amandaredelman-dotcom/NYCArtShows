@@ -1,6 +1,5 @@
 # Settings for the site and the Sunday email.
-site_url: https://claude.ai/artifact/XZJLnsBXpncXMkoGuU4j5e
-artifact_slug: f774a5b8-7e9b-4006-a78b-2bd9c5b8105d
+site_url: https://amandaredelman-dotcom.github.io/NYCArtShows/
 email_picks_preset: Classical & hyperreal
 
 # Extra presets shown on the site (beyond the standard period families).
