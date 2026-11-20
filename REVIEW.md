@@ -48,7 +48,8 @@ aren't published. Check the page's script parses (`node --check` on the extracte
 
 ## 5. Publish and email
 - Republish `web/index.html` to the artifact in `web/config.yaml` (`artifact_slug`), as `index.html`.
-- Send the email from Amanda's Gmail to `email_to` in `web/config.yaml`: subject
+- Send the email from Amanda's Gmail to the address given in the Sunday task's instructions (it is kept out of
+  this public repository on purpose; never write it here): subject
   `On View New York · <Mon D>`, HTML body `web/email.html`, plain-text body `web/email.txt`.
 - Commit `data/labels.json`, `data/web_shows.json` and `data/published.json`, open a pull request and merge it.
 
