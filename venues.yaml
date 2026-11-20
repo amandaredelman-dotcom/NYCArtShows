@@ -1,0 +1,249 @@
+# Venues the weekly scan visits.
+# Each venue lists the page where it announces exhibitions, plus facts that
+# rarely change (address, subway, admission) so the AI model only has to read
+# show titles and dates.
+#
+# To add a venue, copy a block and fill it in. `type` is one of:
+# Museum, Gallery, Nonprofit, Auction house, Art fair, Public art
+# `area` is one of: Manhattan, Long Island City, Brooklyn
+
+- id: met
+  name: The Met Fifth Avenue
+  type: Museum
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 1000 Fifth Avenue, New York, NY 10028
+  subway: 4 5 6 to 86 St
+  admission: Ticketed · pay what you wish for NY State residents
+  free: false
+  urls:
+    - https://www.metmuseum.org/exhibitions
+
+- id: frick
+  name: The Frick Collection
+  type: Museum
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 1 East 70th Street, New York, NY 10021
+  subway: 6 to 68 St–Hunter College
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.frick.org/exhibitions
+
+- id: morgan
+  name: The Morgan Library & Museum
+  type: Museum
+  area: Manhattan
+  neighborhood: Murray Hill
+  address: 225 Madison Avenue, New York, NY 10016
+  subway: 6 to 33 St
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.themorgan.org/exhibitions/current
+    - https://www.themorgan.org/exhibitions/upcoming
+
+- id: moma
+  name: The Museum of Modern Art
+  type: Museum
+  area: Manhattan
+  neighborhood: Midtown
+  address: 11 West 53rd Street, New York, NY 10019
+  subway: E M to 5 Av/53 St
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.moma.org/calendar/exhibitions
+
+- id: whitney
+  name: Whitney Museum of American Art
+  type: Museum
+  area: Manhattan
+  neighborhood: Meatpacking District
+  address: 99 Gansevoort Street, New York, NY 10014
+  subway: A C E L to 14 St–8 Av
+  admission: Ticketed
+  free: false
+  urls:
+    - https://whitney.org/exhibitions
+
+- id: guggenheim
+  name: Solomon R. Guggenheim Museum
+  type: Museum
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 1071 Fifth Avenue, New York, NY 10128
+  subway: 4 5 6 to 86 St
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.guggenheim.org/exhibitions
+
+- id: neue
+  name: Neue Galerie New York
+  type: Museum
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 1048 Fifth Avenue, New York, NY 10028
+  subway: 4 5 6 to 86 St
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.neuegalerie.org/exhibitions
+
+- id: hispanic-society
+  name: Hispanic Society Museum & Library
+  type: Museum
+  area: Manhattan
+  neighborhood: Washington Heights
+  address: 613 West 155th Street, New York, NY 10032
+  subway: 1 to 157 St
+  admission: Free
+  free: true
+  urls:
+    - https://hispanicsociety.org/exhibitions
+
+- id: colnaghi
+  name: Colnaghi New York
+  type: Gallery
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 23 East 67th Street, Fourth Floor, New York, NY 10065
+  subway: 6 to 68 St–Hunter College
+  admission: Free · by appointment
+  free: true
+  urls:
+    - https://colnaghi.com/exhibitions
+
+- id: forum
+  name: Forum Gallery
+  type: Gallery
+  area: Manhattan
+  neighborhood: Midtown
+  address: 41 East 57th Street, New York, NY 10022
+  subway: N R W to 5 Av/59 St
+  admission: Free
+  free: true
+  urls:
+    - https://www.forumgallery.com/exhibitions/
+
+- id: henoch
+  name: Gallery Henoch
+  type: Gallery
+  area: Manhattan
+  neighborhood: Chelsea
+  address: 555 West 25th Street, New York, NY 10001
+  subway: C E to 23 St
+  admission: Free
+  free: true
+  urls:
+    - https://www.galleryhenoch.com/exhibitions/
+
+- id: meisel
+  name: Louis K. Meisel Gallery
+  type: Gallery
+  area: Manhattan
+  neighborhood: SoHo
+  address: 141 Prince Street, New York, NY 10012
+  subway: R W to Prince St
+  admission: Free
+  free: true
+  urls:
+    - https://meiselgallery.com/exhibitions/
+
+- id: zwirner
+  name: David Zwirner
+  type: Gallery
+  area: Manhattan
+  neighborhood: Chelsea
+  address: 533 West 19th Street, New York, NY 10011
+  subway: C E to 23 St
+  admission: Free
+  free: true
+  urls:
+    - https://www.davidzwirner.com/exhibitions
+
+- id: gagosian
+  name: Gagosian
+  type: Gallery
+  area: Manhattan
+  neighborhood: Chelsea
+  address: 555 West 24th Street, New York, NY 10011
+  subway: C E to 23 St
+  admission: Free
+  free: true
+  urls:
+    - https://gagosian.com/exhibitions/
+
+- id: moma-ps1
+  name: MoMA PS1
+  type: Museum
+  area: Long Island City
+  neighborhood: Long Island City
+  address: 22-25 Jackson Avenue, Queens, NY 11101
+  subway: 7 to Court Sq · G to 21 St
+  admission: Free during PS1's 50th-anniversary year
+  free: true
+  urls:
+    - https://www.momaps1.org/en/programs
+
+- id: noguchi
+  name: The Noguchi Museum
+  type: Museum
+  area: Long Island City
+  neighborhood: Long Island City
+  address: 9-01 33rd Road, Long Island City, NY 11106
+  subway: N W to Broadway
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.noguchi.org/museum/exhibitions/
+
+- id: sculpturecenter
+  name: SculptureCenter
+  type: Nonprofit
+  area: Long Island City
+  neighborhood: Long Island City
+  address: 44-19 Purves Street, Long Island City, NY 11101
+  subway: 7 to Court Sq · E M to Court Sq–23 St
+  admission: Suggested donation
+  free: true
+  urls:
+    - https://www.sculpture-center.org/exhibitions
+
+- id: brooklyn-museum
+  name: Brooklyn Museum
+  type: Museum
+  area: Brooklyn
+  neighborhood: Prospect Heights
+  address: 200 Eastern Parkway, Brooklyn, NY 11238
+  subway: 2 3 to Eastern Pkwy–Brooklyn Museum
+  admission: Ticketed
+  free: false
+  urls:
+    - https://www.brooklynmuseum.org/exhibitions
+
+- id: pioneer-works
+  name: Pioneer Works
+  type: Nonprofit
+  area: Brooklyn
+  neighborhood: Red Hook
+  address: 159 Pioneer Street, Brooklyn, NY 11231
+  subway: F G to Carroll St (then bus B61)
+  admission: Free
+  free: true
+  urls:
+    - https://pioneerworks.org/exhibitions
+
+- id: sothebys
+  name: Sotheby's (Breuer Building)
+  type: Auction house
+  area: Manhattan
+  neighborhood: Upper East Side
+  address: 945 Madison Avenue, New York, NY 10021
+  subway: 6 to 77 St
+  admission: Free public previews
+  free: true
+  urls:
+    - https://www.sothebys.com/en/series/masters-week
