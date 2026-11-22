@@ -1,19 +1,7 @@
 {
- "fingerprint": "e928a98f0b2df0747c45bfc6388b54abe46eec4cda7b6e0f53b568e4564163b5",
- "checked": "2026-11-20",
+ "fingerprint": "3387568daa7ce5b83bc0381462e3e609313cd869fa4076a0321c615914c4fbce",
+ "checked": "2026-11-22",
  "shows": [
-  {
-   "key": "kent-monkman-officer-and-laughing-girl",
-   "title": "Kent Monkman: Officer and Laughing Girl",
-   "artists": [],
-   "start_date": "2026-11-12",
-   "end_date": "2027-02-22",
-   "dates_as_written": "November 12, 2026 to February 22, 2027",
-   "summary": "The Frick Collection presents an installation of new paintings by Kent Monkman, exploring themes of colonization and representation inspired by Johannes Vermeer's 'Officer and Laughing Girl'.",
-   "url": "https://www.frick.org/exhibitions/monkman",
-   "source": "ai",
-   "needs_check": false
-  },
   {
    "key": "siena-the-art-of-bronze-1450-1500",
    "title": "Siena: The Art of Bronze, 1450–1500",
@@ -21,8 +9,20 @@
    "start_date": "2026-10-15",
    "end_date": "2027-01-18",
    "dates_as_written": "October 15, 2026 to January 18, 2027",
-   "summary": "An exhibition focusing on Sienese bronze sculpture during the Italian Renaissance, featuring works from Tuscany.",
+   "summary": "The Frick Collection presents an exhibition focusing on Siena as a center of artistic excellence and technical innovation in bronze sculpture during the Italian Renaissance.",
    "url": "https://www.frick.org/exhibitions/siena",
+   "source": "ai",
+   "needs_check": false
+  },
+  {
+   "key": "kent-monkman-officer-and-laughing-girl",
+   "title": "Kent Monkman: Officer and Laughing Girl",
+   "artists": [],
+   "start_date": "2026-11-12",
+   "end_date": "2027-02-22",
+   "dates_as_written": "November 12, 2026 to February 22, 2027",
+   "summary": "The Frick Collection presents a new installation of paintings by Kent Monkman, exploring historic European art and narratives from an Indigenous perspective.",
+   "url": "https://www.frick.org/exhibitions/monkman",
    "source": "ai",
    "needs_check": false
   }

@@ -1,42 +1,5 @@
 {
- "fingerprint": "8c6ec145d46fe7b250be2843b02ad2cca3475388fabf3340cb28b00cb604aa53",
- "checked": "2026-11-20",
- "shows": [
-  {
-   "key": "taryn-simon-father-country-i-do-love-you",
-   "title": "Taryn Simon: Father Country I Do Love You",
-   "artists": [],
-   "start_date": "2026-09-18",
-   "end_date": "2027-03-14",
-   "dates_as_written": "September 18, 2026–March 14, 2027",
-   "summary": "The Solomon R. Guggenheim Museum presents an interactive installation by Taryn Simon featuring never-before-seen photographs, text, video, and sculpture.",
-   "url": "https://www.guggenheim.org/exhibition/taryn-simon",
-   "source": "ai",
-   "needs_check": false
-  },
-  {
-   "key": "guggenheim-pop-1960-to-now",
-   "title": "Guggenheim Pop: 1960 to Now",
-   "artists": [],
-   "start_date": "2026-06-05",
-   "end_date": "2027-01-10",
-   "dates_as_written": "June 5, 2026–January 10, 2027",
-   "summary": "This exhibition showcases Pop art from the collection and its enduring influence on contemporary artists, including works by Andy Warhol and Maurizio Cattelan.",
-   "url": "https://www.guggenheim.org/exhibition/guggenheim-pop",
-   "source": "ai",
-   "needs_check": false
-  },
-  {
-   "key": "collection-in-focus-modern-european-currents",
-   "title": "Collection in Focus | Modern European Currents",
-   "artists": [],
-   "start_date": "2025-07-15",
-   "end_date": "2027-01-10",
-   "dates_as_written": "July 15, 2025–January 10, 2027",
-   "summary": "See how artists like Natalia Goncharova, Vasily Kandinsky, and Franz Marc transformed painting in the early 20th century.",
-   "url": "https://www.guggenheim.org/exhibition/collection-in-focus-modern-european-currents",
-   "source": "ai",
-   "needs_check": false
-  }
- ]
+ "fingerprint": "575f2c04a6bcec4727ecf57b02b4e1d86def8f1814c31b647717e87824424902",
+ "checked": "2026-11-22",
+ "shows": []
 }

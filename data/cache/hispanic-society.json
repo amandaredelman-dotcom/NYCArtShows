@@ -1,6 +1,6 @@
 {
- "fingerprint": "1c866970a9cb1076ffd442bb77115c5e41c9e8c4e4b61adf7bc6f55a2d088586",
- "checked": "2026-11-20",
+ "fingerprint": "030cb099cb77085808a087a62ee14c5801a82d6711832468419923c22a6b6173",
+ "checked": "2026-11-22",
  "shows": [
   {
    "key": "a-living-vision-the-sorolla-gallery-at-100",
@@ -9,7 +9,7 @@
    "start_date": "2026-05-21",
    "end_date": "2027-05-27",
    "dates_as_written": "May 21, 2026 – May 27, 2027",
-   "summary": "The Hispanic Society Museum & Library is hosting an exhibition celebrating the 100th anniversary of the Sorolla Gallery, featuring Joaquín Sorolla's works.",
+   "summary": "The Hispanic Society Museum & Library is hosting an exhibition celebrating the 100th anniversary of the Sorolla Gallery, featuring works by Joaquín Sorolla.",
    "url": "https://hispanicsociety.org/exhibition/a-living-vision-the-sorolla-gallery-at-100/",
    "source": "ai",
    "needs_check": false

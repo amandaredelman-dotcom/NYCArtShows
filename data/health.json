@@ -1,10 +1,13 @@
 {
- "generated_at": "2026-11-20T22:23:46+00:00",
+ "generated_at": "2026-11-22T09:46:34+00:00",
  "model": "qwen2.5:3b",
- "venues_scanned": 20,
- "show_count": 32,
+ "venues_scanned": 22,
+ "show_count": 30,
  "unreachable": [
   "zwirner",
+  "christies",
+  "guggenheim",
+  "armory",
   "morgan",
   "pioneer-works",
   "moma"
@@ -28,11 +31,9 @@
    "venue": "Whitney Museum of American Art",
    "id": "whitney",
    "status": "ok",
-   "notes": [
-    "page unchanged since last scan; reused results"
-   ],
-   "shows": 1,
-   "changed": false
+   "notes": [],
+   "shows": 2,
+   "changed": true
   },
   {
    "venue": "Colnaghi New York",
@@ -66,6 +67,14 @@
    "changed": false
   },
   {
+   "venue": "Christie's Rockefeller Center",
+   "id": "christies",
+   "status": "no_shows_found",
+   "notes": [],
+   "shows": 0,
+   "changed": true
+  },
+  {
    "venue": "The Frick Collection",
    "id": "frick",
    "status": "ok",
@@ -76,13 +85,12 @@
   {
    "venue": "Solomon R. Guggenheim Museum",
    "id": "guggenheim",
-   "status": "ok",
+   "status": "no_shows_found",
    "notes": [
-    "https://www.guggenheim.org/exhibitions: little text, retried in browser",
-    "page unchanged since last scan; reused results"
+    "https://www.guggenheim.org/exhibitions: little text, retried in browser"
    ],
-   "shows": 3,
-   "changed": false
+   "shows": 0,
+   "changed": true
   },
   {
    "venue": "Forum Gallery",
@@ -116,6 +124,14 @@
    ],
    "shows": 0,
    "changed": false
+  },
+  {
+   "venue": "Park Avenue Armory",
+   "id": "armory",
+   "status": "no_shows_found",
+   "notes": [],
+   "shows": 0,
+   "changed": true
   },
   {
    "venue": "The Morgan Library & Museum",
@@ -186,11 +202,9 @@
    "venue": "Hispanic Society Museum & Library",
    "id": "hispanic-society",
    "status": "ok",
-   "notes": [
-    "page unchanged since last scan; reused results"
-   ],
+   "notes": [],
    "shows": 1,
-   "changed": false
+   "changed": true
   },
   {
    "venue": "Louis K. Meisel Gallery",

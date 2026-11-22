@@ -1,6 +1,6 @@
 {
- "fingerprint": "618cf04b27e7d7198e9d20ca5e7077d2d2d3c6a6e29579ba216ec840db38ecfd",
- "checked": "2026-11-20",
+ "fingerprint": "a49d6e1a105cc3e6e0ae1110dcb3e5bcc9552e18aef82916619387b2d94d5a87",
+ "checked": "2026-11-22",
  "shows": [
   {
    "key": "roy-lichtenstein-like-new",
@@ -11,6 +11,18 @@
    "dates_as_written": "Through May 10, 2027",
    "summary": "The Whitney Museum of American Art is currently showcasing Roy Lichtenstein's exhibition 'Like New' until May 2027.",
    "url": "https://whitney.org/exhibitions/lichtenstein",
+   "source": "ai",
+   "needs_check": false
+  },
+  {
+   "key": "artport-a-history-of-internet-art",
+   "title": "artport: A History of Internet Art",
+   "artists": [],
+   "start_date": null,
+   "end_date": "2027-03-28",
+   "dates_as_written": "Through Mar 28, 2027",
+   "summary": "The Whitney Museum of American Art is presenting 'artport: A History of Internet Art' until March 2027.",
+   "url": "https://whitney.org/exhibitions/artport-25",
    "source": "ai",
    "needs_check": false
   }
