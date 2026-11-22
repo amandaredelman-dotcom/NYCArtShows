@@ -1,538 +1,557 @@
 {
- "colnaghi--arie-di-teste-italian-oil-paintings-on-paper-1500-1800": {
-  "genres": [
-   "Renaissance",
-   "Baroque",
-   "Rococo"
-  ],
-  "media": [
-   "Painting",
-   "Works on paper"
-  ],
-  "related": [],
-  "blurb": "Italian oil studies of heads painted on paper, from the Renaissance through the 18th century.",
-  "start_date": "2026-10-23",
-  "end_date": "2027-01-29"
- },
- "forum--g-daniel-massad": {
-  "genres": [
-   "Contemporary realism"
-  ],
-  "media": [
-   "Works on paper"
-  ],
-  "related": [
-   {
-    "genre": "Baroque",
-    "note": "meticulous still lifes in the tradition of 17th-century still-life painting"
-   }
-  ],
-  "blurb": "Quietly luminous pastel still lifes by G. Daniel Massad."
- },
- "gagosian--bea-scaccia-groomed": {
-  "genres": [
-   "Contemporary painting"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "New work by Bea Scaccia."
- },
- "gagosian--friends-and-legends-the-collection-of-michael-chow": {
-  "genres": [
-   "Contemporary painting",
-   "Pop Art"
-  ],
-  "media": [
-   "Painting",
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "Works from the personal collection of restaurateur and artist Michael Chow, gathered from the artists he knew."
- },
- "henoch--liminal-spaces-eric-zener": {
-  "genres": [
-   "Photorealism & hyperrealism",
-   "Contemporary realism"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "New paintings by Eric Zener, known for figures suspended underwater and rendered in near-photographic detail.",
-  "title": "Eric Zener: Liminal Spaces"
- },
- "hispanic-society--a-living-vision-the-sorolla-gallery-at-100": {
-  "genres": [
-   "Impressionism",
-   "Spanish"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "An outdoor display on Audubon Terrace marking 100 years of Sorolla’s room-sized Vision of Spain murals, which you can see inside."
- },
- "meisel--high-definition": {
-  "genres": [
-   "Photorealism & hyperrealism"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "A group show of Photorealist painting from the gallery that championed the movement."
- },
- "moma-ps1--artist-interventions": {
-  "genres": [],
-  "media": [],
-  "related": [],
-  "hide": true
- },
- "moma-ps1--courtyard-commission-precious-okoyomon": {
-  "genres": [
-   "Conceptual & installation"
-  ],
-  "media": [
-   "Installation"
-  ],
-  "related": [],
-  "blurb": "Precious Okoyomon’s commission for PS1’s courtyard.",
-  "ongoing": true
- },
- "moma-ps1--esteban-cabeza-de-baca-ancestral-dreams": {
-  "genres": [
-   "Contemporary painting",
-   "Indigenous"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "A large mural by Esteban Cabeza de Baca, on view through spring 2027.",
-  "ongoing": true
- },
- "moma-ps1--hard-art-ends": {
-  "genres": [
-   "Abstraction",
-   "Contemporary painting"
-  ],
-  "media": [
-   "Painting",
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "More than 40 artists trace abstraction by Black American artists from 1969 to now.",
-  "title": "Hard Art",
-  "start_date": "2026-11-05",
-  "end_date": null,
-  "ongoing": true,
-  "url": "https://www.momaps1.org/en/programs/744-hard-art"
- },
- "moma-ps1--homeroom-artists-against-the-bomb": {
-  "genres": [
-   "Conceptual & installation"
-  ],
-  "media": [
-   "Installation",
-   "Works on paper"
-  ],
-  "related": [],
-  "blurb": "Artists Against the Bomb, an international campaign for nuclear disarmament, takes over PS1’s Homeroom.",
-  "ongoing": true
- },
- "moma-ps1--masao-gozu-windows-and-bars": {
-  "genres": [
-   "Photography"
-  ],
-  "media": [
-   "Photography"
-  ],
-  "related": [],
-  "blurb": "Masao Gozu’s half-century of photographs of fellow New Yorkers.",
-  "start_date": null,
-  "end_date": "2027-03-15"
- },
- "moma-ps1--modern-spotlight-fred-wilson": {
-  "genres": [
-   "Conceptual & installation"
-  ],
-  "media": [
-   "Installation",
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "Fred Wilson, known for rearranging museum collections to expose whose stories they leave out.",
-  "start_date": null,
-  "end_date": "2027-09-06"
- },
- "moma-ps1--new-york-fashion-at-ps1-1980-1984": {
-  "genres": [
-   "Fashion"
-  ],
-  "media": [
-   "Fashion & textiles",
-   "Photography"
-  ],
-  "related": [],
-  "blurb": "Photographs, letters and ephemera from PS1’s early-1980s fashion program and the designers it showed.",
-  "start_date": "2026-11-06",
-  "end_date": "2027-03-15"
- },
- "moma-ps1--teresa-margolles-en-el-lugar-de-los-hechos-at-the-scene": {
-  "genres": [
-   "Conceptual & installation",
-   "Latin American"
-  ],
-  "media": [
-   "Installation"
-  ],
-  "related": [],
-  "blurb": "The Mexican artist’s first large US museum survey, with room-sized installations and a new commission.",
-  "start_date": "2026-09-24",
-  "end_date": "2027-02-08"
- },
- "neue--1910-portrait-of-a-year": {
-  "genres": [
-   "Expressionism",
-   "Modernism"
-  ],
-  "media": [
-   "Painting",
-   "Works on paper",
-   "Decorative arts"
-  ],
-  "related": [],
-  "blurb": "Austrian and German art and design from a single pivotal year, 1910."
- },
- "neue--25th-anniversary-exhibition": {
-  "genres": [
-   "Modernism",
-   "Symbolism",
-   "Expressionism"
-  ],
-  "media": [
-   "Painting",
-   "Decorative arts"
-  ],
-  "related": [],
-  "blurb": "Highlights from the museum’s collection of early 20th-century Austrian and German art, for its 25th anniversary."
- },
- "neue--austrian-masterworks": {
-  "genres": [
-   "Symbolism",
-   "Expressionism"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "Klimt, Schiele and Kokoschka from the Neue Galerie’s collection.",
-  "ongoing": true
- },
- "sculpturecenter--aziz-hazara-coming-home": {
-  "genres": [
-   "Conceptual & installation",
-   "South Asian"
-  ],
-  "media": [
-   "Installation",
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "Aziz Hazara builds an installation from debris gathered at a single site, reflecting on return and the legacy of US intervention."
- },
- "sculpturecenter--cevdet-erek-americas": {
-  "genres": [
-   "Conceptual & installation"
-  ],
-  "media": [
-   "Installation"
-  ],
-  "related": [],
-  "blurb": "A site-specific sound commission by Cevdet Erek drawing on New York’s 1980s heavy underground music."
- },
- "sculpturecenter--yining-fei-feral-sediment": {
-  "genres": [
-   "Conceptual & installation"
-  ],
-  "media": [
-   "Installation",
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "New commissioned work by Yining Fei."
- },
- "guggenheim--collection-in-focus-modern-european-currents": {
-  "genres": [
-   "Expressionism",
-   "Modernism"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [],
-  "blurb": "Goncharova, Kandinsky, Marc and others remaking painting in the early 20th century."
- },
- "guggenheim--guggenheim-pop-1960-to-now": {
-  "genres": [
-   "Pop Art",
-   "Contemporary painting"
-  ],
-  "media": [
-   "Painting",
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "Pop art from the collection, from Warhol to the artists still working in its wake."
- },
- "guggenheim--taryn-simon-father-country-i-do-love-you": {
-  "genres": [
-   "Conceptual & installation",
-   "Photography"
-  ],
-  "media": [
-   "Photography",
-   "Installation",
-   "Video"
-  ],
-  "related": [],
-  "blurb": "An installation by Taryn Simon combining photographs, text, video and sculpture."
- },
- "sothebys--master-paintings-works-of-art-part-i": {
-  "hide": true
- },
- "sothebys--master-works-on-paper-from-five-centuries": {
-  "hide": true
- },
- "sothebys--old-masters-in-new-york": {
-  "hide": true
- },
- "frick--kent-monkman-officer-and-laughing-girl": {
-  "genres": [
-   "Contemporary painting",
-   "Indigenous"
-  ],
-  "media": [
-   "Painting"
-  ],
-  "related": [
-   {
-    "genre": "Dutch Golden Age",
-    "note": "responds to Vermeer’s Officer and Laughing Girl, on view in the Frick’s collection"
-   }
-  ],
-  "blurb": "New paintings by the Cree artist Kent Monkman, answering one of the Frick’s three Vermeers from an Indigenous point of view."
- },
- "frick--siena-the-art-of-bronze-1450-1500": {
-  "genres": [
-   "Renaissance"
-  ],
-  "media": [
-   "Sculpture"
-  ],
-  "related": [],
-  "blurb": "About forty Renaissance bronzes, many never shown outside Tuscany, making the case for Siena as a center of bronze casting."
- },
- "noguchi--no-ordinary-light-akari-at-75": {
-  "genres": [
-   "Modern sculpture",
-   "Design & architecture",
-   "Japanese"
-  ],
-  "media": [
-   "Sculpture",
-   "Decorative arts"
-  ],
-  "related": [],
-  "blurb": "Seventy-five years of Noguchi’s Akari paper light sculptures."
- },
- "whitney--roy-lichtenstein-like-new": {
-  "genres": [
-   "Pop Art"
-  ],
-  "media": [
-   "Painting",
-   "Works on paper"
-  ],
-  "related": [],
-  "blurb": "Roy Lichtenstein at the Whitney."
- },
- "met--orientalism-between-fact-and-fantasy": {
-  "genres": [
-   "Academic & Salon",
-   "Romanticism",
-   "Neoclassicism",
-   "Islamic world"
-  ],
-  "media": [
-   "Painting",
-   "Decorative arts",
-   "Works on paper"
-  ],
-  "related": []
- },
- "met--krasner-and-pollock-past-continuous": {
-  "genres": [
-   "Abstract Expressionism"
-  ],
-  "media": [
-   "Painting",
-   "Works on paper"
-  ],
-  "related": []
- },
- "morgan--rembrandts-lions": {
-  "genres": [
-   "Dutch Golden Age",
-   "Baroque"
-  ],
-  "media": [
-   "Works on paper",
-   "Painting"
-  ],
-  "related": []
- },
- "morgan--johan-tobias-sergel": {
-  "genres": [
-   "Neoclassicism",
-   "Romanticism"
-  ],
-  "media": [
-   "Sculpture",
-   "Works on paper"
-  ],
-  "related": []
- },
- "moma--brancusi-the-artist-and-his-studio": {
-  "genres": [
-   "Modern sculpture",
-   "Modernism"
-  ],
-  "media": [
-   "Sculpture",
-   "Photography"
-  ],
-  "related": []
- },
- "moma--the-surrealist-book": {
-  "genres": [
-   "Surrealism"
-  ],
-  "media": [
-   "Books & manuscripts",
-   "Works on paper"
-  ],
-  "related": []
- },
- "brooklyn-museum--art-of-manga": {
-  "genres": [
-   "Japanese",
-   "Contemporary painting"
-  ],
-  "media": [
-   "Works on paper"
-  ],
-  "related": []
- },
- "brooklyn-museum--manga-before-manga": {
-  "genres": [
-   "Japanese"
-  ],
-  "media": [
-   "Works on paper",
-   "Painting"
-  ],
-  "related": []
- },
- "brooklyn-museum--hopi-kachina-dolls": {
-  "genres": [
-   "Indigenous",
-   "Decorative arts"
-  ],
-  "media": [
-   "Sculpture"
-  ],
-  "related": []
- },
- "brooklyn-museum--iris-van-herpen": {
-  "genres": [
-   "Fashion",
-   "Design & architecture"
-  ],
-  "media": [
-   "Fashion & textiles",
-   "Sculpture"
-  ],
-  "related": []
- },
- "zwirner--yoshitomo-nara": {
-  "genres": [
-   "Contemporary painting",
-   "Japanese"
-  ],
-  "media": [
-   "Painting",
-   "Sculpture",
-   "Works on paper"
-  ],
-  "related": []
- },
- "sothebys--masters-week-2027": {
-  "genres": [
-   "Renaissance",
-   "Baroque",
-   "Dutch Golden Age",
-   "Rococo"
-  ],
-  "media": [
-   "Painting",
-   "Works on paper",
-   "Sculpture"
-  ],
-  "related": []
- },
- "christies--classic-week-2027": {
-  "genres": [
-   "Renaissance",
-   "Baroque",
-   "Dutch Golden Age",
-   "Rococo"
-  ],
-  "media": [
-   "Painting",
-   "Sculpture"
-  ],
-  "related": []
- },
- "armory--the-winter-show-2027": {
-  "genres": [
-   "Decorative arts"
-  ],
-  "media": [
-   "Decorative arts",
-   "Painting",
-   "Sculpture"
-  ],
-  "related": [
-   {
-    "genre": "Baroque",
-    "note": "dealers bring Old Master paintings alongside antiques and design"
-   }
-  ]
- },
- "armory--tefaf-new-york-2027": {
-  "genres": [
-   "Baroque",
-   "Modernism",
-   "Decorative arts"
-  ],
-  "media": [
-   "Painting",
-   "Sculpture",
-   "Decorative arts"
-  ],
-  "related": []
- }
+  "colnaghi--arie-di-teste-italian-oil-paintings-on-paper-1500-1800": {
+    "genres": [
+      "Renaissance",
+      "Baroque",
+      "Rococo"
+    ],
+    "media": [
+      "Painting",
+      "Works on paper"
+    ],
+    "related": [],
+    "blurb": "Italian oil studies of heads painted on paper, from the Renaissance through the 18th century.",
+    "start_date": "2026-10-23",
+    "end_date": "2027-01-29"
+  },
+  "forum--g-daniel-massad": {
+    "genres": [
+      "Contemporary realism"
+    ],
+    "media": [
+      "Works on paper"
+    ],
+    "related": [
+      {
+        "genre": "Baroque",
+        "note": "meticulous still lifes in the tradition of 17th-century still-life painting"
+      }
+    ],
+    "blurb": "Quietly luminous pastel still lifes by G. Daniel Massad."
+  },
+  "gagosian--bea-scaccia-groomed": {
+    "genres": [
+      "Contemporary painting"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [],
+    "blurb": "New work by Bea Scaccia."
+  },
+  "gagosian--friends-and-legends-the-collection-of-michael-chow": {
+    "genres": [
+      "Contemporary painting",
+      "Pop Art"
+    ],
+    "media": [
+      "Painting",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "Works from the personal collection of restaurateur and artist Michael Chow, gathered from the artists he knew."
+  },
+  "henoch--liminal-spaces-eric-zener": {
+    "genres": [
+      "Photorealism & hyperrealism",
+      "Contemporary realism"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [],
+    "blurb": "New paintings by Eric Zener, known for figures suspended underwater and rendered in near-photographic detail.",
+    "title": "Eric Zener: Liminal Spaces"
+  },
+  "hispanic-society--a-living-vision-the-sorolla-gallery-at-100": {
+    "genres": [
+      "Impressionism",
+      "Spanish"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [],
+    "blurb": "An outdoor display on Audubon Terrace marking 100 years of Sorolla’s room-sized Vision of Spain murals, which you can see inside."
+  },
+  "meisel--high-definition": {
+    "genres": [
+      "Photorealism & hyperrealism"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [],
+    "blurb": "A group show of Photorealist painting from the gallery that championed the movement."
+  },
+  "moma-ps1--artist-interventions": {
+    "genres": [],
+    "media": [],
+    "related": [],
+    "hide": true
+  },
+  "moma-ps1--courtyard-commission-precious-okoyomon": {
+    "genres": [
+      "Conceptual & installation"
+    ],
+    "media": [
+      "Installation"
+    ],
+    "related": [],
+    "blurb": "Precious Okoyomon’s commission for PS1’s courtyard.",
+    "ongoing": true
+  },
+  "moma-ps1--esteban-cabeza-de-baca-ancestral-dreams": {
+    "genres": [
+      "Contemporary painting",
+      "Latin American"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [
+      {
+        "genre": "Ancient",
+        "note": "draws on Mesoamerican iconography"
+      }
+    ],
+    "blurb": "A plaza mural by Esteban Cabeza de Baca weaving Mesoamerican imagery with the history of the United Farm Workers.",
+    "start_date": "2026-06-25",
+    "tba": "Through spring 2027"
+  },
+  "moma-ps1--hard-art-ends": {
+    "genres": [
+      "Abstraction",
+      "Contemporary painting"
+    ],
+    "media": [
+      "Painting",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "More than 40 artists trace abstraction by Black American artists from 1969 to now.",
+    "title": "Hard Art",
+    "start_date": "2026-11-05",
+    "end_date": null,
+    "ongoing": true,
+    "url": "https://www.momaps1.org/en/programs/744-hard-art"
+  },
+  "moma-ps1--homeroom-artists-against-the-bomb": {
+    "genres": [
+      "Conceptual & installation"
+    ],
+    "media": [
+      "Works on paper",
+      "Photography",
+      "Video",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "Posters, films, photographs, sculpture and ephemera by Artists Against the Bomb, shown with new works in support of nuclear disarmament.",
+    "start_date": "2026-09-10",
+    "end_date": "2027-02-08"
+  },
+  "moma-ps1--masao-gozu-windows-and-bars": {
+    "genres": [
+      "Photography"
+    ],
+    "media": [
+      "Photography"
+    ],
+    "related": [],
+    "blurb": "Masao Gozu’s half-century of photographs of fellow New Yorkers.",
+    "start_date": null,
+    "end_date": "2027-03-15"
+  },
+  "moma-ps1--modern-spotlight-fred-wilson": {
+    "genres": [
+      "Conceptual & installation"
+    ],
+    "media": [
+      "Installation",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "Fred Wilson, known for rearranging museum collections to expose whose stories they leave out.",
+    "start_date": null,
+    "end_date": "2027-09-06"
+  },
+  "moma-ps1--new-york-fashion-at-ps1-1980-1984": {
+    "genres": [
+      "Fashion"
+    ],
+    "media": [
+      "Fashion & textiles",
+      "Photography"
+    ],
+    "related": [],
+    "blurb": "Photographs, letters and ephemera from PS1’s early-1980s fashion program and the designers it showed.",
+    "start_date": "2026-11-06",
+    "end_date": "2027-03-15"
+  },
+  "moma-ps1--teresa-margolles-en-el-lugar-de-los-hechos-at-the-scene": {
+    "genres": [
+      "Conceptual & installation",
+      "Latin American"
+    ],
+    "media": [
+      "Installation"
+    ],
+    "related": [],
+    "blurb": "The Mexican artist’s first large US museum survey, with room-sized installations and a new commission.",
+    "start_date": "2026-09-24",
+    "end_date": "2027-02-08"
+  },
+  "neue--1910-portrait-of-a-year": {
+    "genres": [
+      "Expressionism",
+      "Modernism"
+    ],
+    "media": [
+      "Painting",
+      "Works on paper",
+      "Decorative arts"
+    ],
+    "related": [],
+    "blurb": "Austrian and German art and design from a single pivotal year, 1910."
+  },
+  "neue--25th-anniversary-exhibition": {
+    "genres": [
+      "Modernism",
+      "Symbolism",
+      "Expressionism"
+    ],
+    "media": [
+      "Painting",
+      "Decorative arts"
+    ],
+    "related": [],
+    "blurb": "Highlights from the museum’s collection of early 20th-century Austrian and German art, for its 25th anniversary."
+  },
+  "neue--austrian-masterworks": {
+    "genres": [
+      "Symbolism",
+      "Expressionism"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [],
+    "blurb": "Klimt, Schiele and Kokoschka from the Neue Galerie’s collection.",
+    "ongoing": true
+  },
+  "sculpturecenter--aziz-hazara-coming-home": {
+    "genres": [
+      "Conceptual & installation",
+      "South Asian"
+    ],
+    "media": [
+      "Installation",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "Aziz Hazara builds an installation from debris gathered at a single site, reflecting on return and the legacy of US intervention."
+  },
+  "sculpturecenter--cevdet-erek-americas": {
+    "genres": [
+      "Conceptual & installation"
+    ],
+    "media": [
+      "Installation"
+    ],
+    "related": [],
+    "blurb": "A site-specific sound commission by Cevdet Erek drawing on New York’s 1980s heavy underground music."
+  },
+  "sculpturecenter--yining-fei-feral-sediment": {
+    "genres": [
+      "Conceptual & installation"
+    ],
+    "media": [
+      "Installation",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "New commissioned work by Yining Fei."
+  },
+  "guggenheim--collection-in-focus-modern-european-currents": {
+    "genres": [
+      "Expressionism",
+      "Modernism"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [],
+    "blurb": "Goncharova, Kandinsky, Marc and others remaking painting in the early 20th century."
+  },
+  "guggenheim--guggenheim-pop-1960-to-now": {
+    "genres": [
+      "Pop Art",
+      "Contemporary painting"
+    ],
+    "media": [
+      "Painting",
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "Pop art from the collection, from Warhol to the artists still working in its wake."
+  },
+  "guggenheim--taryn-simon-father-country-i-do-love-you": {
+    "genres": [
+      "Conceptual & installation",
+      "Photography"
+    ],
+    "media": [
+      "Photography",
+      "Installation",
+      "Video"
+    ],
+    "related": [],
+    "blurb": "An installation by Taryn Simon combining photographs, text, video and sculpture."
+  },
+  "sothebys--master-paintings-works-of-art-part-i": {
+    "hide": true
+  },
+  "sothebys--master-works-on-paper-from-five-centuries": {
+    "hide": true
+  },
+  "sothebys--old-masters-in-new-york": {
+    "hide": true
+  },
+  "frick--kent-monkman-officer-and-laughing-girl": {
+    "genres": [
+      "Contemporary painting",
+      "Indigenous"
+    ],
+    "media": [
+      "Painting"
+    ],
+    "related": [
+      {
+        "genre": "Dutch Golden Age",
+        "note": "responds to Vermeer’s Officer and Laughing Girl, on view in the Frick’s collection"
+      }
+    ],
+    "blurb": "New paintings by the Cree artist Kent Monkman, answering one of the Frick’s three Vermeers from an Indigenous point of view."
+  },
+  "frick--siena-the-art-of-bronze-1450-1500": {
+    "genres": [
+      "Renaissance"
+    ],
+    "media": [
+      "Sculpture"
+    ],
+    "related": [],
+    "blurb": "About forty Renaissance bronzes, many never shown outside Tuscany, making the case for Siena as a center of bronze casting."
+  },
+  "noguchi--no-ordinary-light-akari-at-75": {
+    "genres": [
+      "Modern sculpture",
+      "Design & architecture",
+      "Japanese"
+    ],
+    "media": [
+      "Sculpture",
+      "Decorative arts"
+    ],
+    "related": [],
+    "blurb": "Seventy-five years of Noguchi’s Akari paper light sculptures."
+  },
+  "whitney--roy-lichtenstein-like-new": {
+    "genres": [
+      "Pop Art"
+    ],
+    "media": [
+      "Painting",
+      "Works on paper"
+    ],
+    "related": [],
+    "blurb": "Roy Lichtenstein at the Whitney."
+  },
+  "met--orientalism-between-fact-and-fantasy": {
+    "genres": [
+      "Academic & Salon",
+      "Romanticism",
+      "Neoclassicism",
+      "Islamic world"
+    ],
+    "media": [
+      "Painting",
+      "Decorative arts",
+      "Works on paper"
+    ],
+    "related": []
+  },
+  "met--krasner-and-pollock-past-continuous": {
+    "genres": [
+      "Abstract Expressionism"
+    ],
+    "media": [
+      "Painting",
+      "Works on paper"
+    ],
+    "related": []
+  },
+  "morgan--rembrandts-lions": {
+    "genres": [
+      "Dutch Golden Age",
+      "Baroque"
+    ],
+    "media": [
+      "Works on paper",
+      "Painting"
+    ],
+    "related": []
+  },
+  "morgan--johan-tobias-sergel": {
+    "genres": [
+      "Neoclassicism",
+      "Romanticism"
+    ],
+    "media": [
+      "Sculpture",
+      "Works on paper"
+    ],
+    "related": []
+  },
+  "moma--brancusi-the-artist-and-his-studio": {
+    "genres": [
+      "Modern sculpture",
+      "Modernism"
+    ],
+    "media": [
+      "Sculpture",
+      "Photography"
+    ],
+    "related": []
+  },
+  "moma--the-surrealist-book": {
+    "genres": [
+      "Surrealism"
+    ],
+    "media": [
+      "Books & manuscripts",
+      "Works on paper"
+    ],
+    "related": []
+  },
+  "brooklyn-museum--art-of-manga": {
+    "genres": [
+      "Japanese",
+      "Contemporary painting"
+    ],
+    "media": [
+      "Works on paper"
+    ],
+    "related": []
+  },
+  "brooklyn-museum--manga-before-manga": {
+    "genres": [
+      "Japanese"
+    ],
+    "media": [
+      "Works on paper",
+      "Painting"
+    ],
+    "related": []
+  },
+  "brooklyn-museum--hopi-kachina-dolls": {
+    "genres": [
+      "Indigenous",
+      "Decorative arts"
+    ],
+    "media": [
+      "Sculpture"
+    ],
+    "related": []
+  },
+  "brooklyn-museum--iris-van-herpen": {
+    "genres": [
+      "Fashion",
+      "Design & architecture"
+    ],
+    "media": [
+      "Fashion & textiles",
+      "Sculpture"
+    ],
+    "related": []
+  },
+  "zwirner--yoshitomo-nara": {
+    "genres": [
+      "Contemporary painting",
+      "Japanese"
+    ],
+    "media": [
+      "Painting",
+      "Sculpture",
+      "Works on paper"
+    ],
+    "related": []
+  },
+  "sothebys--masters-week-2027": {
+    "genres": [
+      "Renaissance",
+      "Baroque",
+      "Dutch Golden Age",
+      "Rococo"
+    ],
+    "media": [
+      "Painting",
+      "Works on paper",
+      "Sculpture"
+    ],
+    "related": []
+  },
+  "christies--classic-week-2027": {
+    "genres": [
+      "Renaissance",
+      "Baroque",
+      "Dutch Golden Age",
+      "Rococo"
+    ],
+    "media": [
+      "Painting",
+      "Sculpture"
+    ],
+    "related": []
+  },
+  "armory--the-winter-show-2027": {
+    "genres": [
+      "Decorative arts"
+    ],
+    "media": [
+      "Decorative arts",
+      "Painting",
+      "Sculpture"
+    ],
+    "related": [
+      {
+        "genre": "Baroque",
+        "note": "dealers bring Old Master paintings alongside antiques and design"
+      }
+    ]
+  },
+  "armory--tefaf-new-york-2027": {
+    "genres": [
+      "Baroque",
+      "Modernism",
+      "Decorative arts"
+    ],
+    "media": [
+      "Painting",
+      "Sculpture",
+      "Decorative arts"
+    ],
+    "related": []
+  },
+  "whitney--artport-a-history-of-internet-art": {
+    "genres": [
+      "Video & new media"
+    ],
+    "media": [
+      "Video"
+    ],
+    "related": [],
+    "blurb": "A look back at 25 years of artport, the Whitney's online portal for internet art commissions."
+  }
 }
